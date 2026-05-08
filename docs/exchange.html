@@ -1,28 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Exchange Roadmap</title>
+</head>
+<body>
 <h1>Exchange Roadmap</h1>
-<hr><h2>Exchange: Dynamic distribution groups now populate membership faster on creation and modification</h2>
-<p><b>Status:</b> In development</p>
-<p><b>GA Date:</b> May CY2026</p>
-<hr><h2>Exchange: Message Trace - Custom Retention</h2>
-<p><b>Status:</b> In development</p>
-<p><b>GA Date:</b> December CY2026</p>
-<hr><h2>Microsoft 365: SMTP onboarding to App Role Based Access Control</h2>
-<p><b>Status:</b> Launched</p>
-<p><b>GA Date:</b> November CY2025</p>
-<hr><h2>Exchange: New Message Trace in Exchange Online </h2>
-<p><b>Status:</b> Launched</p>
-<p><b>GA Date:</b> June CY2025</p>
-<hr><h2>Exchange: Exchange Online Moderation approval requests via Actionable Messages</h2>
-<p><b>Status:</b> Rolling out</p>
-<p><b>GA Date:</b> March CY2026</p>
-<hr><h2>Microsoft 365: Multi-Geo In-Region Routing</h2>
-<p><b>Status:</b> Launched</p>
-<p><b>GA Date:</b> October CY2025</p>
-<hr><h2>Exchange: High Volume Email for Microsoft 365</h2>
-<p><b>Status:</b> Launched</p>
-<p><b>GA Date:</b> March CY2026</p>
-<hr><h2>Microsoft 365: Information Barriers (IB) upgrading from IB v1 to IB v2 with new capabilities</h2>
-<p><b>Status:</b> In development</p>
-<p><b>GA Date:</b> January CY2027</p>
-<hr><h2>Exchange: Adding support for Inbound SMTP DANE with DNSSEC for Exchange Online GCC-H and DoD</h2>
-<p><b>Status:</b> In development</p>
-<p><b>GA Date:</b> December CY2025</p>
+<p>Total items: 9</p>
+<section class="roadmap-item">
+<h2>Exchange: Dynamic distribution groups now populate membership faster on creation and modification</h2>
+<p class="description">We're updating dynamic distribution groups (DDGs) in Exchange Online to make group membership available sooner after creation or a filter change. For DDGs with 5,000 members or fewer, membership is now populated as part of the creation or modification operation — no more waiting up to 2 hours.</p>
+<p class="meta">Status: In development | GA Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Exchange: High Volume Email for Microsoft 365</h2>
+<p class="description">High Volume Email is a new service for line of business applications and other high-volume SMTP scenarios that enables you to send internal messages beyond the current limits of Exchange Online.</p>
+<p class="meta">Status: Launched | GA Date: March CY2026
+ | Preview Date: April CY2024
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft 365: Information Barriers (IB) upgrading from IB v1 to IB v2 with new capabilities</h2>
+<p class="description">Information Barriers (IB) V2 brings new capabilities including larger segment scale support, multi-segment support, and flexible people discoverability etc. Existing IB v1 tenants require an upgrade to IB v2 to take advantage of these new capabilities. This roadmap item is intended only for all IB v1 customers. All other customers will get IB v2 capabilities when they enable IB in their tenants. IB v2 upgrade will be opt-in.</p>
+<p class="meta">Status: In development | GA Date: January CY2027
+ | Preview Date: October CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange, Microsoft Teams, OneDrive, SharePoint, Microsoft 365</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Web</p>
+<p class="tags">Phase: Current Channel, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Exchange: Exchange Online Moderation approval requests via Actionable Messages</h2>
+<p class="description">The Exchange Online Moderation feature gives message moderators the ability to Approve or Reject sending a moderated message to its intended recipients via a special email message form that includes Approve and Reject buttons in the Outlook Desktop or Outlook on the web toolbar. However, the ability to approve or reject a moderated message currently isn't supported on Outlook for iOS, Outlook for Android, or Outlook for Mac. With this update to use Actionable Messages for moderation approval messages, moderators with mailboxes hosted in Exchange Online will now be able to approve or reject moderated messages via all the Microsoft email clients: from Outlook for Windows, Outlook for Mac, Outlook for iOS and Outlook for Android.</p>
+<p class="meta">Status: Rolling out | GA Date: March CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Mac, Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft 365: Multi-Geo In-Region Routing</h2>
+<p class="description">Multi-Geo In-Region Routing (IRR) enables customers to control the routing of inbound emails. Using IRR, customers can set the geo-region that inbound mail should be routed to for specific Accepted Domains.</p>
+<p class="meta">Status: Launched | GA Date: October CY2025
+ | Preview Date: October CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft 365, Exchange</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Mac, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Exchange: Message Trace - Custom Retention</h2>
+<p class="description">We will be introducing customizable retention options for Message Trace logs. Organizations will be able to choose from a predefined set of retention periods.</p>
+<p class="meta">Status: In development | GA Date: December CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft 365: SMTP onboarding to App Role Based Access Control</h2>
+<p class="description">We're simplifying how organizations grant applications permission to send email on behalf of mailboxes. Today, customers must manually assign permissions to each individual mailbox using PowerShell, which is time-consuming and inefficient. With this new capability, admins can assign the SMTP.SendAsApp role to an app through App Role-Based Access Control (RBAC), enabling group-based or scoped access to mailboxes. This eliminates the need for per-mailbox configuration and streamlines onboarding for SMTP clients using OAuth. It’s a scalable, secure, and modern approach to managing mailbox access for applications.</p>
+<p class="meta">Status: Launched | GA Date: November CY2025
+ | Preview Date: October CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange, Microsoft 365</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Mac, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Exchange: New Message Trace in Exchange Online </h2>
+<p class="description">Admins can access the new Message Trace and its capabilities by default when navigating to the Exchange admin center > Mail flow > Message Trace. Admins can also leverage the new Message Trace PowerShell cmdlets Get-MessageTraceV2 and Get-MessageTraceDetailV2. We have added key improvements such as support to query up to 90 days of historical data for message trace summary report (near real-time query), subject search capability, and more. </p>
+<p class="meta">Status: Launched | GA Date: June CY2025
+ | Preview Date: December CY2024
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Exchange: Adding support for Inbound SMTP DANE with DNSSEC for Exchange Online GCC-H and DoD</h2>
+<p class="description">We are adding inbound support for SMTP DANE with DNSSEC to Exchange Online GCC-H and DoD. Look for another roadmap item for inbound support in WW and GCC, and one for outbound support of SMTP DANE with DNSSEC.</p>
+<p class="meta">Status: In development | GA Date: December CY2025
+ | Preview Date: October CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Exchange</p>
+<p class="tags">Cloud: GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+</body>
+</html>
