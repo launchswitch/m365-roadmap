@@ -136,6 +136,13 @@ def main():
         status = item.get("status", "Unknown")
         copilot_by_status.setdefault(status, []).append(item)
 
+    STATUS_SLUGS = {
+        "In development": "in-development",
+        "Rolling out": "rolling-out",
+        "Launched": "launched",
+        "Cancelled": "cancelled",
+    }
+
     # Write Copilot index page with links to status-split pages
     index_path = os.path.join(OUTPUT_DIR, "index.html")
     with open(index_path, "w", encoding="utf-8") as f:
@@ -154,17 +161,18 @@ def main():
         for status in ["In development", "Rolling out", "Launched", "Cancelled"]:
             items = copilot_by_status.get(status, [])
             if items:
-                slug = status.lower().replace(" ", "_")
-                f.write(f'<li><a href="copilot_{slug}.html">{status}</a> ({len(items)} items)</li>\n')
+                slug = STATUS_SLUGS[status]
+                f.write(f'<li><a href="copilot/{slug}/">{status}</a> ({len(items)} items)</li>\n')
         f.write("</ul>\n")
         f.write("</body>\n</html>")
 
-    # Write per-status Copilot pages
+    # Write per-status Copilot pages as subdirectories with index.html
     for status, items in copilot_by_status.items():
-        slug = status.lower().replace(" ", "_")
-        filename = f"copilot_{slug}.html"
+        slug = STATUS_SLUGS.get(status, status.lower().replace(" ", "-"))
+        subdir = os.path.join(OUTPUT_DIR, "copilot", slug)
+        os.makedirs(subdir, exist_ok=True)
         write_page(
-            os.path.join(OUTPUT_DIR, filename),
+            os.path.join(subdir, "index.html"),
             f"Microsoft Copilot Roadmap - {status}",
             items,
             description=(
@@ -172,7 +180,7 @@ def main():
                 f"across all M365 products. {len(items)} items."
             ),
         )
-        print(f"  {filename} - Copilot/{status} ({len(items)} items)")
+        print(f"  copilot/{slug}/ - {status} ({len(items)} items)")
 
     # Write per-product pages
     for product, items in products.items():
@@ -185,7 +193,9 @@ def main():
         )
 
     # Write a site index page listing all products + the copilot all-up
-    index_path = os.path.join(OUTPUT_DIR, "products.html")
+    products_dir = os.path.join(OUTPUT_DIR, "products")
+    os.makedirs(products_dir, exist_ok=True)
+    index_path = os.path.join(products_dir, "index.html")
     with open(index_path, "w", encoding="utf-8") as f:
         f.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n")
         f.write('<meta charset="utf-8">\n')
@@ -197,8 +207,8 @@ def main():
         for status in ["In development", "Rolling out", "Launched", "Cancelled"]:
             items = copilot_by_status.get(status, [])
             if items:
-                slug = status.lower().replace(" ", "_")
-                f.write(f'<p><a href="copilot_{slug}.html">Copilot - {status}</a> ({len(items)} items)</p>\n')
+                slug = STATUS_SLUGS[status]
+                f.write(f'<p><a href="copilot/{slug}/">Copilot - {status}</a> ({len(items)} items)</p>\n')
         f.write("<ul>\n")
         for product in sorted(products.keys()):
             filename = slugify(product)
@@ -219,10 +229,10 @@ def main():
         for status in ["In development", "Rolling out", "Launched", "Cancelled"]:
             items = copilot_by_status.get(status, [])
             if items:
-                slug = status.lower().replace(" ", "_")
-                f.write(f"  <url><loc>{base_url}/copilot_{slug}.html</loc><priority>0.9</priority></url>\n")
+                slug = STATUS_SLUGS[status]
+                f.write(f"  <url><loc>{base_url}/copilot/{slug}/</loc><priority>0.9</priority></url>\n")
         # Product index
-        f.write(f"  <url><loc>{base_url}/products.html</loc><priority>0.5</priority></url>\n")
+        f.write(f"  <url><loc>{base_url}/products/</loc><priority>0.5</priority></url>\n")
         # Product pages
         for product in sorted(products.keys()):
             filename = slugify(product)
