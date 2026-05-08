@@ -162,14 +162,14 @@ def main():
             items = copilot_by_status.get(status, [])
             if items:
                 slug = STATUS_SLUGS[status]
-                f.write(f'<li><a href="copilot/{slug}/">{status}</a> ({len(items)} items)</li>\n')
+                f.write(f'<li><a href="{slug}/">{status}</a> ({len(items)} items)</li>\n')
         f.write("</ul>\n")
         f.write("</body>\n</html>")
 
-    # Write per-status Copilot pages as subdirectories with index.html
+    # Write per-status Copilot pages as top-level subdirectories (max 2 levels deep)
     for status, items in copilot_by_status.items():
         slug = STATUS_SLUGS.get(status, status.lower().replace(" ", "-"))
-        subdir = os.path.join(OUTPUT_DIR, "copilot", slug)
+        subdir = os.path.join(OUTPUT_DIR, slug)
         os.makedirs(subdir, exist_ok=True)
         write_page(
             os.path.join(subdir, "index.html"),
@@ -180,7 +180,7 @@ def main():
                 f"across all M365 products. {len(items)} items."
             ),
         )
-        print(f"  copilot/{slug}/ - {status} ({len(items)} items)")
+        print(f"  {slug}/ - {status} ({len(items)} items)")
 
     # Write per-product pages
     for product, items in products.items():
@@ -208,7 +208,7 @@ def main():
             items = copilot_by_status.get(status, [])
             if items:
                 slug = STATUS_SLUGS[status]
-                f.write(f'<p><a href="copilot/{slug}/">Copilot - {status}</a> ({len(items)} items)</p>\n')
+                f.write(f'<p><a href="{slug}/">Copilot - {status}</a> ({len(items)} items)</p>\n')
         f.write("<ul>\n")
         for product in sorted(products.keys()):
             filename = slugify(product)
@@ -230,7 +230,7 @@ def main():
             items = copilot_by_status.get(status, [])
             if items:
                 slug = STATUS_SLUGS[status]
-                f.write(f"  <url><loc>{base_url}/copilot/{slug}/</loc><priority>0.9</priority></url>\n")
+                f.write(f"  <url><loc>{base_url}/{slug}/</loc><priority>0.9</priority></url>\n")
         # Product index
         f.write(f"  <url><loc>{base_url}/products/</loc><priority>0.5</priority></url>\n")
         # Product pages
