@@ -130,18 +130,49 @@ def main():
     copilot_all = sorted(copilot_all.values(), key=lambda x: x.get("modified", ""), reverse=True)
     print(f"Found {len(copilot_all)} Copilot-related items across all products")
 
-    # Write Copilot All-Up page (the main page for LLM consumption)
-    write_page(
-        os.path.join(OUTPUT_DIR, "index.html"),
-        "Microsoft Copilot Roadmap (All-Up)",
-        copilot_all,
-        description=(
-            "Complete unified view of all Microsoft Copilot-related roadmap items across "
-            "all M365 products. This includes items from Copilot, PowerPoint, Word, Teams, "
-            "Outlook, Excel, SharePoint, Purview, Edge, Viva, and other products where Copilot "
-            "features are being developed or launched."
-        ),
-    )
+    # Split Copilot items by status into separate pages
+    copilot_by_status = {}
+    for item in copilot_all:
+        status = item.get("status", "Unknown")
+        copilot_by_status.setdefault(status, []).append(item)
+
+    # Write Copilot index page with links to status-split pages
+    index_path = os.path.join(OUTPUT_DIR, "index.html")
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write("<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n")
+        f.write('<meta charset="utf-8">\n')
+        f.write("<title>Microsoft Copilot Roadmap (All-Up)</title>\n")
+        f.write("</head>\n<body>\n")
+        f.write("<h1>Microsoft Copilot Roadmap (All-Up)</h1>\n")
+        f.write(
+            "<p>Complete unified view of all Microsoft Copilot-related roadmap items "
+            "across all M365 products (Copilot, PowerPoint, Word, Teams, Outlook, Excel, "
+            "SharePoint, Purview, Edge, Viva, and others).</p>\n"
+        )
+        f.write(f"<p>Total Copilot items: {len(copilot_all)}</p>\n")
+        f.write("<ul>\n")
+        for status in ["In development", "Rolling out", "Launched", "Cancelled"]:
+            items = copilot_by_status.get(status, [])
+            if items:
+                slug = status.lower().replace(" ", "_")
+                f.write(f'<li><a href="copilot_{slug}.html">{status}</a> ({len(items)} items)</li>\n')
+        f.write("</ul>\n")
+        f.write("</body>\n</html>")
+
+    # Write per-status Copilot pages
+    for status, items in copilot_by_status.items():
+        slug = status.lower().replace(" ", "_")
+        filename = f"copilot_{slug}.html"
+        write_page(
+            os.path.join(OUTPUT_DIR, filename),
+            f"Microsoft Copilot Roadmap - {status}",
+            items,
+            description=(
+                f"All Microsoft Copilot-related roadmap items with status '{status}' "
+                f"across all M365 products. {len(items)} items."
+            ),
+        )
+        print(f"  {filename} - Copilot/{status} ({len(items)} items)")
 
     # Write per-product pages
     for product, items in products.items():
@@ -163,6 +194,11 @@ def main():
         f.write("<h1>Microsoft 365 Roadmap - All Products</h1>\n")
         f.write(f"<p>Source: {API_URL} | {len(data)} total items</p>\n")
         f.write('<p><a href="index.html">Copilot All-Up (unified Copilot roadmap)</a></p>\n')
+        for status in ["In development", "Rolling out", "Launched", "Cancelled"]:
+            items = copilot_by_status.get(status, [])
+            if items:
+                slug = status.lower().replace(" ", "_")
+                f.write(f'<p><a href="copilot_{slug}.html">Copilot - {status}</a> ({len(items)} items)</p>\n')
         f.write("<ul>\n")
         for product in sorted(products.keys()):
             filename = slugify(product)
@@ -171,8 +207,30 @@ def main():
         f.write("</ul>\n")
         f.write("</body>\n</html>")
 
+    # Write sitemap.xml
+    sitemap_path = os.path.join(OUTPUT_DIR, "sitemap.xml")
+    base_url = "https://launchswitch.github.io/m365-roadmap"
+    with open(sitemap_path, "w", encoding="utf-8") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        # Copilot index
+        f.write(f"  <url><loc>{base_url}/</loc><priority>1.0</priority></url>\n")
+        # Copilot status pages
+        for status in ["In development", "Rolling out", "Launched", "Cancelled"]:
+            items = copilot_by_status.get(status, [])
+            if items:
+                slug = status.lower().replace(" ", "_")
+                f.write(f"  <url><loc>{base_url}/copilot_{slug}.html</loc><priority>0.9</priority></url>\n")
+        # Product index
+        f.write(f"  <url><loc>{base_url}/products.html</loc><priority>0.5</priority></url>\n")
+        # Product pages
+        for product in sorted(products.keys()):
+            filename = slugify(product)
+            f.write(f"  <url><loc>{base_url}/{filename}</loc><priority>0.3</priority></url>\n")
+        f.write('</urlset>')
+
     print(f"Generated pages in {OUTPUT_DIR}")
-    print(f"  index.html - Copilot All-Up ({len(copilot_all)} items)")
+    print(f"  index.html - Copilot All-Up index ({len(copilot_all)} items)")
     print(f"  products.html - Product index ({len(products)} products)")
     for product in sorted(products.keys()):
         print(f"  {slugify(product)} - {product} ({len(products[product])} items)")
