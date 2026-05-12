@@ -6,7 +6,101 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 355</p>
+<p>Total items: 356</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Role groups UI enhancements</h2>
+<p class="description">The Role groups page in the Microsoft Purview compliance portal now allows admins to look up permissions by roles and memberships.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - Granular classification error controls (Exchange online) </h2>
+<p class="description">Granular Protections for Exchange Online is available in public preview. This release gives administrators fine-grained control to create DLP policies based on specific classification or text extraction failure types — such as timeout, throttling and other scan errors — rather than one blanket policy for all failure conditions.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention for Microsoft 365 Copilot to safeguard prompts for government clouds</h2>
+<p class="description">We are expanding Microsoft Purview DLP for Microsoft 365 Copilot to safeguard prompts containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot and agents from returning a response when prompts contain sensitive data or using that sensitive data for grounding in Microsoft 365 or the web. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot. </p>
+<p class="meta">Status: In development | GA Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Edge: v.148 - Shadow AI</h2>
+<p class="description">Currently admins can set Purview DLP policies to protect sensitive data from being sent to any Generative AI apps, users get blocked from sending their prompts to LLM when this is triggered and stops their workflow. This new add-on to the feature shows a new UI that will give users the option to be redirected to M365 Copilot which will open and navigate to this M365 Copilot tab and allow them to send the same prompt there.</p>
+<p class="meta">Status: Launched | GA Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Edge, Microsoft Copilot (Microsoft 365), Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Add support of hyperlinks in warn & block toast messages for Edge browser</h2>
+<p class="description">With this feature, data officers can now complete their coverage story by now embedding hyperlinks within toast messages for the Edge browser. When this rule is triggered, the end user will see a toast with a customized title and message with a hyperlink. This feature is useful when organizations need to direct users to a specific resource or a repository for more specific instruction (e.g. internal policy SharePoint site).</p>
+<p class="meta">Status: Launched | GA Date: April CY2026
+ | Preview Date: March CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management – Pay-as-you-go model for Other Generative AI apps indicators</h2>
+<p class="description">Other AI apps will move to pay-as-you-go model. Microsoft Copilot experiences indicators can still be used for free even without subscription. To continue using Other AI apps indicators, please link an Azure subscription to Microsoft Purview to enable billing. Insider Risk Management indicators transitioning to a pay-as-you-go pricing model: “Entering risky prompt in Other AI apps”. This indicator is present in Policy indicators-> Generative AI apps -> Other AI apps Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. ​
+</p>
+<p class="meta">Status: In development | GA Date: March CY2027
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention – File Testing Against Sensitive Information Classifiers</h2>
+<p class="description">A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently.
+</p>
+<p class="meta">Status: Launched | GA Date: March CY2026
+ | Preview Date: February CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Endpoint Data Loss Prevention: Expand protection to Copilot + PC devices for Recall snapshots through custom policies</h2>
+<p class="description">Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p>
+<p class="meta">Status: Rolling out | GA Date: April CY2026
+ | Preview Date: November CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Lifecycle Management - DLM Retention support Microsoft Teams call logs</h2>
 <p class="description">Microsoft Teams stores call logs in several persistent locations, such as CDR logs. Currently, these logs are retained indefinitely. However, regulatory requirements in various countries specify maximum retention periods for calling-related logs. This discrepancy creates a compliance gap, as the existing retention practices may not meet regulatory obligations. 
@@ -556,18 +650,6 @@ For Microsoft 365 E5 customers, the experience also includes Copilot-powered ins
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Add support of hyperlinks in warn & block toast messages for Edge browser</h2>
-<p class="description">With this feature, data officers can now complete their coverage story by now embedding hyperlinks within toast messages for the Edge browser. When this rule is triggered, the end user will see a toast with a customized title and message with a hyperlink. This feature is useful when organizations need to direct users to a specific resource or a repository for more specific instruction (e.g. internal policy SharePoint site).</p>
-<p class="meta">Status: Rolling out | GA Date: April CY2026
- | Preview Date: March CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Data Lifecycle Management - Introduction of secure workflow to bypass legal holds and retention policies in Exchange</h2>
 <p class="description">The first release of Priority cleanup enables admins to create a recurring exception to delete items under a broader retention policy and/or legal hold on Exchange workload. Creating a Priority cleanup will require a separate security role, multiple approvers, and will have a complete audit trail</p>
 <p class="meta">Status: In development | GA Date: September CY2026
@@ -741,17 +823,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Edge: Shadow AI</h2>
-<p class="description">Currently admins can set Purview DLP policies to protect sensitive data from being sent to any Generative AI apps, users get blocked from sending their prompts to LLM when this is triggered and stops their workflow. This new add-on to the feature shows a new UI that will give users the option to be redirected to M365 Copilot which will open and navigate to this M365 Copilot tab and allow them to send the same prompt there.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Edge, Microsoft Copilot (Microsoft 365), Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
 </section>
@@ -1042,19 +1113,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention – File Testing Against Sensitive Information Classifiers</h2>
-<p class="description">A new feature will be introduced on the main Classification page, allowing users to test files against all available classifiers to identify the presence of sensitive information. Users will have the option to select a single classifier or run tests across all classifiers. This capability is designed to help users identify sensitive content within files and troubleshoot classification issues more efficiently.
-</p>
-<p class="meta">Status: Rolling out | GA Date: March CY2026
- | Preview Date: February CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention for Microsoft 365 Copilot to safeguard prompts </h2>
@@ -1472,18 +1530,6 @@ Shows trends and details of classification changes over time, helping admins to 
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management – Pay-as-you-go model for Other Generative AI apps indicators</h2>
-<p class="description">Other AI apps will move to pay-as-you-go model. Microsoft Copilot experiences indicators can still be used for free even without subscription. To continue using Other AI apps indicators, please link an Azure subscription to Microsoft Purview to enable billing. Insider Risk Management indicators transitioning to a pay-as-you-go pricing model: “Entering risky prompt in Other AI apps”. This indicator is present in Policy indicators-> Generative AI apps -> Other AI apps Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. ​
-</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Insider Risk Management- Data Security Triage Agent in IRM Enhancements</h2>
 <p class="description">The Data Security Triage Agent in Insider Risk Management is deploying enhancements such as improved user risk and activity explorer pattern summaries to support improved investigation accuracy, context, and decision quality. 
 
@@ -1607,18 +1653,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Endpoint Data Loss Prevention: Expand protection to Copilot + PC devices for Recall snapshots through custom policies</h2>
-<p class="description">Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p>
-<p class="meta">Status: In development | GA Date: April CY2026
- | Preview Date: November CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: eDiscovery- CMK (Customer managed key) for eDiscovery direct export </h2>
@@ -4086,30 +4120,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management - Microsoft Fabric risk indicators in Insider Risk Management</h2>
-<p class="description">With this update, Insider Risk Management extends its risk-detection capabilities to Microsoft Fabric products by offering ready-to-use risk indicators based on user activities in Power BI. Organizations can use these new indicators in data theft and data leaks policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>
-<p class="meta">Status: Launched | GA Date: June CY2025
- | Preview Date: April CY2024
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Microsoft Information Protection and Insider Risk Management support multicloud environments</h2>
-<p class="description">Microsoft Purview Information Protection extends its sensitivity labels and protection policies into data contained in Azure SQL, Azure Data Lake Storage, and Amazon S3. Organizations can create label-based protection policies that specify which data sources, databases, or storage buckets are in scope, and which users or groups are allowed to access data with a certain sensitivity label and Purview will automatically enforce the policy and block unauthorized access to sensitive data. Insider Risk Management extends its detection into multicloud environments by offering ready-to-use risk indicators in Azure, AWS, and SaaS apps including Box, Dropbox, and Google Drive. Organizations can use these new indicators in data theft and data leaks policies. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Note: We have updated the cloud environments to reflect the current state.  We apologize for any inconvenience this may cause.</p>
-<p class="meta">Status: Launched | GA Date: June CY2025
- | Preview Date: March CY2024
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Insider Risk Management - Policy tuning analysis for priority content-only policies</h2>
