@@ -6,7 +6,69 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 357</p>
+<p>Total items: 361</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management - Unified alert queue</h2>
+<p class="description">We’re introducing a new unified alert triage experience in Insider Risk Management that brings agent‑driven insights directly into the standard Alerts queue. With this update, analysts can view agent categorizations alongside traditional alert filters and columns in a single, consolidated workflow. The updated alert details panel, enables faster investigation and action from the alerts list page by embedding agent insights directly into the alert experience. To support customer transition, the existing alert and agent triage experience will remain available for 60 days and can be accessed via the Alerts tabs under Users in the left navigation. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+</p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management - Expanding note capabilities across alerts & cases</h2>
+<p class="description">We’re introducing a new collaboration capability in Insider Risk Management that enables analysts and investigators to add notes directly within alerts. With this feature, users can document investigation progress, share findings, and capture key context throughout the triage process. In addition to manually added notes, system‑generated notes will automatically record updates such as alert status changes or user assignments — helping teams maintain a clear and auditable investigation timeline. By centralizing investigation history directly within alerts, this update helps improve collaboration and ensures all stakeholders stay aligned throughout the investigation lifecycle. These note enhancements will also be made available in Cases. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+</p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management - Enhanced user profile in IRM alerts</h2>
+<p class="description">We’re enhancing the User section within Insider Risk Management alerts to provide investigators with more contextual user profile and risk attributes directly within their workflow. With this update, analysts can now view key user details such as employee type, office location, start date, policy inclusion, priority user group status, and last working day—helping them build a more complete understanding of the user during investigations without navigating away from the alert experience. This feature will be available as part of the new alert workflow through the Alert Details panel. Additional user attributes will continue to be introduced over time, with pseudo‑anonymization honored to support privacy‑by‑design investigation practices. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+</p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Endpoint Data Loss Prevention — Endpoint DLP now supports a pre curated list of file extensions for the file extension condition</h2>
+<p class="description">Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Security Investigations – Introducing OCR support</h2>
+<p class="description">Microsoft Purview Data Security Investigations (DSI) is extending our investigations by adding optical character recognition (OCR), extracting text from images and incorporating it into investigation data. This enables AI-powered deep content analysis to uncover data security risks that are often hidden within visual content.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention – Export DLP and Label Policy Configurations</h2>
 <p class="description">A new export functionality will be introduced in two locations: the Data Loss Prevention > Policies page and the Information Protection > Label publishing policies page. This feature will allow users to export their existing DLP configurations and label policies, including schema, as a downloadable ZIP file. The exported file can be attached to support tickets to accelerate troubleshooting. </p>
@@ -654,18 +716,6 @@ DLP admins can get these insights on all the policies or on few selected policie
 <p class="description">At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps—so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.</p>
 <p class="meta">Status: Rolling out | GA Date: May CY2026
  | Preview Date: December CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Security Investigations – Introducing OCR support</h2>
-<p class="description">This feature is bringing the Information Protection Filer Labeler and Viewer applications to the MacOS platform. Enabling customers to have the same capabilities available on Mac. Core functionality will be available with the exception of the Advanced label-based protection feature.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: May CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
