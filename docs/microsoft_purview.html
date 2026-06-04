@@ -6,7 +6,78 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 352</p>
+<p>Total items: 353</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection - Rights Management connector – Certificate-based authentication</h2>
+<p class="description">The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.
+</p>
+<p class="meta">Status: In development | GA Date: August CY2026
+ | Preview Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Enforce DLP protection upon new content before its saved</h2>
+<p class="description">Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.</p>
+<p class="meta">Status: Rolling out | GA Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Expand protection to Copilot + PC devices for Recall snapshots through custom policies</h2>
+<p class="description">Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p>
+<p class="meta">Status: Rolling out | GA Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention – Block External Domain/User action in DLP for SharePoint/OneDrive</h2>
+<p class="description">Block External Domain/User action in Microsoft Purview DLP for SharePoint and OneDrive, gives organizations stronger control over who can access sensitive files. With this enhancement, admins can configure DLP policies that block file access for specific external domains or individual users. This capability helps prevent unintended exposure by external users and supports enterprise compliance requirements.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Data Loss Prevention - Decoupling of Policy tips and Email notifications while configuring rules on Data Loss Prevention for Sharepoint and Onedrive</h2>
+<p class="description">As of today, whenever the user wants to enable email notifications the policy tips also need to be enabled and vice versa, but with this decoupling the admin can configure the following: 1) None of policy tips or email notification 2) Only policy tips 3) Only Email Notifications 4) Both Email Notifications and Policy tips</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: February CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Data Lifecycle Management - Automatic data preservation for high-risk users</h2>
+<p class="description">Adaptive Protection in Microsoft Purview helps you protect your organization’s data by integrating dynamic insider risk levels, determined by data related activities, with various policy engines to automatically moving users in and out of policies as their risk levels change over time. The integration with Data Lifecycle Management will automatically apply retention labels to preserve deleted emails and files based on a user’s insider risk level. </p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: June CY2024
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - AI Powered Data Loss Prevention Policy Optimizer</h2>
 <p class="description">DLP Policy Optimizer uses AI to analyze your organization’s DLP policies, rule structure, and activity signals to identify optimization opportunities that are difficult to detect manually. It highlights overlapping rules, redundant conditions, misconfigurations, and sources of excessive noise, and presents prioritized recommendations with supporting evidence and suggested actions. This enables you to reduce false positives and alert noise, improve policy precision, and simplify policy management with confidence.
@@ -1130,18 +1201,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Data Loss Prevention - Decoupling of Policy tips and Email notifications while configuring rules on Data Loss Prevention for Sharepoint and Onedrive</h2>
-<p class="description">As of today, whenever the user wants to enable email notifications the policy tips also need to be enabled and vice versa, but with this decoupling the admin can configure the following: 1) None of policy tips or email notification 2) Only policy tips 3) Only Email Notifications 4) Both Email Notifications and Policy tips</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: February CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Information Protection - Sensitivity label grouping modernization</h2>
 <p class="description">To help improve label usability and configuration, the sensitivity labeling scheme will be simplified to only consist of labels and label groupings. These new label groupings allow admins to better organize and categorize their labels (previously done via parent labels).</p>
 <p class="meta">Status: In development | GA Date: August CY2026
@@ -1249,28 +1308,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Enforce DLP protection upon new content before its saved</h2>
-<p class="description">Monitor or protect file with unsaved sensitive content from being printed or being moved to USB or network share.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Expand protection to Copilot + PC devices for Recall snapshots through custom policies</h2>
-<p class="description">Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Information Protection– Override manually applied labels and Remove labels with Auto-labeling</h2>
@@ -1429,18 +1466,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention – Block External Domain/User action in DLP for SharePoint/OneDrive</h2>
-<p class="description">Block External Domain/User action in Microsoft Purview DLP for SharePoint and OneDrive, gives organizations stronger control over who can access sensitive files. With this enhancement, admins can configure DLP policies that block file access for specific external domains or individual users. This capability helps prevent unintended exposure by external users and supports enterprise compliance requirements.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Preview Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Data Lifecycle Management - Bulk replacement or removal of a retention label</h2>
@@ -3232,18 +3257,6 @@ The count of items stamped with that tag.</p>
 <p class="description">A user guidance feature designed to handle queries that fall outside supported data boundaries or capabilities. Instead of rejecting unsupported requests, it intelligently suggests alternatives by interpreting user intent and reformulating the query based on available parameters. </p>
 <p class="meta">Status: Launched | GA Date: July CY2025
  | Preview Date: June CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Data Lifecycle Management - Automatic data preservation for high-risk users</h2>
-<p class="description">Adaptive Protection in Microsoft Purview helps you protect your organization’s data by integrating dynamic insider risk levels, determined by data related activities, with various policy engines to automatically moving users in and out of policies as their risk levels change over time. The integration with Data Lifecycle Management will automatically apply retention labels to preserve deleted emails and files based on a user’s insider risk level. </p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: June CY2024
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
