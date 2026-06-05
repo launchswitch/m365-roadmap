@@ -8,6 +8,53 @@
 <h1>Microsoft Purview Roadmap</h1>
 <p>Total items: 353</p>
 <section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation</h2>
+<p class="description">AI agent skill to detect and alert unhealthy policy sync and device configuration.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: DSPM data risk assessments: item-level investigation & remediation</h2>
+<p class="description">Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.</p>
+<p class="meta">Status: Launched | GA Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Scanner data export for custom reporting</h2>
+<p class="description">Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.</p>
+<p class="meta">Status: In development | GA Date: August CY2026
+ | Preview Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High</p>
+<p class="tags">Platforms: Desktop</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Information Protection - Sensitivity label grouping modernization</h2>
+<p class="description">To help improve label usability and configuration, the sensitivity labeling scheme will be simplified to only consist of labels and label groupings. These new label groupings allow admins to better organize and categorize their labels (previously done via parent labels).</p>
+<p class="meta">Status: Launched | GA Date: December CY2025
+ | Preview Date: July CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
 <h2>Microsoft Purview: Information Protection - Rights Management connector – Certificate-based authentication</h2>
 <p class="description">The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.
 </p>
@@ -632,18 +679,6 @@ For this GA release, we’re introducing expanded coverage (which also includes 
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI Skill</h2>
-<p class="description">AI agent skill to detect and alert unhealthy policy sync and device configuration.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention to restrict processing external emails in Microsoft 365 Copilot and Copilot Chat</h2>
 <p class="description">We are expanding Microsoft Purview DLP for Microsoft 365 Copilot and Copilot Chat to safeguard risks from external emails. This real-time control helps organizations mitigate data risks by preventing Microsoft 365 Copilot and Chat from processing emails from senders external to your organization. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot.</p>
 <p class="meta">Status: In development | GA Date: July CY2026
@@ -1097,17 +1132,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: DSPM data risk assessments: item-level investigation & remediation</h2>
-<p class="description">Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.</p>
-<p class="meta">Status: Rolling out | GA Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: DSPM – New Microsoft Purview Data Security Posture Management Experience</h2>
 <p class="description">At Ignite, Microsoft is introducing a major evolution of Purview Data Security Posture Management (DSPM) to help organizations strengthen data security and confidently embrace AI. The new DSPM experience unifies visibility and control across traditional data and AI-driven environments, delivering outcome-based guided workflows that turn insights into actionable steps—so teams can prioritize risks and remediate faster. It brings AI observability, enhanced posture reporting, and intelligent Security Copilot agents to automate tasks like triage and policy management. Plus, Purview now extends coverage beyond Microsoft data with third-party signals from partners like BigID, Cyera, OneTrust, and Varonis, giving security teams a single, streamlined view of sensitive data across clouds and platforms. Together, these innovations make DSPM the central hub for managing data security posture in the era of AI. We are also extending Data Risk Assessments to Fabric and to item-level analysis with new remediation actions like bulk disabling of overshared SharePoint links.</p>
 <p class="meta">Status: In development | GA Date: July CY2026
@@ -1547,18 +1571,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Scanner data export for custom reporting</h2>
-<p class="description">Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High</p>
-<p class="tags">Platforms: Desktop</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Data Loss Prevention – Restrict access action support for sematic models and lakehouses in Fabric </h2>
@@ -2588,18 +2600,6 @@ For this GA release, we’re introducing expanded coverage (which also includes 
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Information Protection - Sensitivity label grouping modernization</h2>
-<p class="description">To help improve label usability and configuration, the sensitivity labeling scheme will be simplified to only consist of labels and label groupings. These new label groupings allow admins to better organize and categorize their labels (previously done via parent labels).</p>
-<p class="meta">Status: Rolling out | GA Date: December CY2025
- | Preview Date: July CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview Compliance Portal: Custom CC policy as IRM indicator</h2>
