@@ -8,6 +8,17 @@
 <h1>Microsoft Edge Roadmap</h1>
 <p>Total items: 64</p>
 <section class="roadmap-item">
+<h2>Microsoft Edge: Enterprise WebView2 runtime downgrade via Downgrade Version policy</h2>
+<p class="description">Administrators can temporarily roll back specific applications to a previous WebView2 Evergreen Runtime version (N-1 or N-2) using the new Downgrade Version policy in msedgewebview2.admx. This policy allows enterprises to mitigate critical regressions by specifying per-application exe-to-version mappings. The Edge Updater installs the target version side-by-side, and the WebView2 Loader redirects targeted apps accordingly. Downgrades auto-expire with each new WebView2 release: apps pinned to N-1 remain on the same version (now N-2) and auto-update in the next release, while apps pinned to N-2 revert to the current Evergreen version. The policy applies only to enterprise-managed devices (domain-joined or MDM-enrolled).</p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Edge</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
 <h2>Microsoft Edge: Passkey Sync for Enterprise Users</h2>
 <p class="description">Microsoft Edge is introducing support for passkey synchronization for enterprise users, enabling secure, passwordless authentication across devices. Passkeys created in Edge can now be synced seamlessly, improving sign-in experience while maintaining strong security standards.</p>
 <p class="meta">Status: In development | GA Date: July CY2026
@@ -250,17 +261,6 @@ Note: We have made the decision to cancel this planned release. We apologize for
 <h2>Microsoft Edge: Tracking prevention when browsing InPrivate </h2>
 <p class="description">Microsoft Edge is unifying the tracking prevention experience for non-InPrivate and InPrivate browsing windows.  Microsoft Edge will use the same tracking prevention setting as a normal browsing window when in InPrivate mode. </p>
 <p class="meta">Status: In development | GA Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Edge</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Edge: Enterprise WebView2 runtime downgrade via Downgrade Version policy</h2>
-<p class="description">Administrators can temporarily roll back specific applications to a previous WebView2 Evergreen Runtime version (N-1 or N-2) using the new Downgrade Version policy in msedgewebview2.admx. This policy allows enterprises to mitigate critical regressions by specifying per-application exe-to-version mappings. The Edge Updater installs the target version side-by-side, and the WebView2 Loader redirects targeted apps accordingly. Downgrades auto-expire with each new WebView2 release: apps pinned to N-1 remain on the same version (now N-2) and auto-update in the next release, while apps pinned to N-2 revert to the current Evergreen version. The policy applies only to enterprise-managed devices (domain-joined or MDM-enrolled).</p>
-<p class="meta">Status: In development | GA Date: June CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Edge</p>
