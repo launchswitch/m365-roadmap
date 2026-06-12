@@ -6,7 +6,51 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 351</p>
+<p>Total items: 349</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management – Policy Recommendation Panel in IRM</h2>
+<p class="description">Today, Insider Risk Management (IRM) provides policy-driven protection for data leaks, data theft, and risky AI usage. However, while policy-driven protections are powerful, customers may not always have clear visibility into where coverage can be optimized or expanded to address latent insider risk.
+
+IRM now provides guidance on what protections are missing or which policy configurations deliver the most incremental value, providing customers with more comprehensive coverage to mitigate their most critical insider risk.
+
+Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  
+
+</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention – Reduce policy sync status SLA on the Purview UI from 2 hours to 30 mins</h2>
+<p class="description">Admin should be able to see the Endpoint DLP policy sync status on the Purview portal within 30 mins.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Preview Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management – Ability to create cases without content in IRM</h2>
+<p class="description">Insider Risk Management is providing the ability to create a case without content. With this, we will introduce a new active case limit (2000). This new functionality will allow customers to create more cases particularly when content download is unnecessary. If a case is created without content download, content download can be initiated anytime the case is active pending available content download limits. There is no change to the active content download limit (100). 
+
+Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>
+<p class="meta">Status: Launched | GA Date: May CY2026
+ | Preview Date: February CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Security Triage Agent - Sensitive Data Remediation through Microsoft Teams</h2>
 <p class="description">The Data Security Triage Agent in Data Loss Prevention now offers a new sensitive data remediation function, which empowers organizations to proactively identify and remediate sensitive information—such as Social Security Numbers, passwords, and credit card data—across thousands of files stored in SharePoint or OneDrive locations, dramatically increasing the percentage of remediated files with sensitive information, resulting in reduced compliance risk. Seamlessly integrated with Microsoft Purview, this new agent function automatically detects file(s) with a Data Loss Prevention (DLP) policy match “Needs Attention” alerts and pushes a remediation notification to the end user who last modified the file guiding them to remove sensitive data through targeted Microsoft Teams messages. Its’ closed-loop workflow ensures that remediation progress is tracked and confirmed, giving admins real-time visibility and control via the Data Security Posture Management dashboard. By streamlining sensitive data cleanup and automating user engagement, this agent helps organizations achieve their remediation goals at scale. Let the Data Security Triage Agent handle the heavy lifting of pushing remediation requests directly to the end user, so Purview admins don't have to!
@@ -376,19 +420,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: New Personalization settings</h2>
-<p class="description">Microsoft Purview is launching a new Personalization page which will help users personalize their individual experience on Purview. Updated June 2, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience.
-</p>
-<p class="meta">Status: Cancelled | GA Date: June CY2026
- | Preview Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts</h2>
 <p class="description">Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations. </p>
 <p class="meta">Status: In development | GA Date: August CY2026
@@ -416,18 +447,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="description">Enhance current API infrastructure to provide easy and simple way for customers to export data to integrate with SIEM tools, create automated workflows and generate customizable reports. Today alert data is present in Graph API and DLP rule match event details are present in Management API. This work enriches the graph API with DLP event data to make correlation and integration easy for customers.</p>
 <p class="meta">Status: In development | GA Date: June CY2026
  | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Security Posture Agent is now available in preview</h2>
-<p class="description">The Data Security Posture Agent is designed to expand the capacity of data security admins as they proactively work to stay on top of a dynamic data and risk landscape within their organization. Its primary job is to help discover sensitive data across your data estate. This agent is designed to analyze and search documents, emails, and messages that match the natural-language discovery intent requested by the user and assess associated risks. By moving beyond traditional keyword and information-type analysis and harnessing the power of LLMs, this agent enables organizations to identify risks based on the actual purpose and context of the content and take appropriate action. Updated 6/1/2026: We are tracking GA release under Roadmap ID 542790. Thank you for your understanding.</p>
-<p class="meta">Status: Cancelled | GA Date: May CY2026
- | Preview Date: December CY2025
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
@@ -602,20 +621,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management – Ability to create cases without content in IRM</h2>
-<p class="description">Insider Risk Management is providing the ability to create a case without content. With this, we will introduce a new active case limit (2000). This new functionality will allow customers to create more cases particularly when content download is unnecessary. If a case is created without content download, content download can be initiated anytime the case is active pending available content download limits. There is no change to the active content download limit (100). 
-
-Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>
-<p class="meta">Status: Rolling out | GA Date: May CY2026
- | Preview Date: February CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - Reduce policy sync status SLA on the Purview UI from 2 hours to 30 mins</h2>
@@ -1187,24 +1192,6 @@ Data Security AI Admin</p>
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management – Policy Recommendation Panel in IRM</h2>
-<p class="description">Today, Insider Risk Management (IRM) provides policy-driven protection for data leaks, data theft, and risky AI usage. However, while policy-driven protections are powerful, customers may not always have clear visibility into where coverage can be optimized or expanded to address latent insider risk.
-
-IRM now provides guidance on what protections are missing or which policy configurations deliver the most incremental value, providing customers with more comprehensive coverage to mitigate their most critical insider risk.
-
-Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  
-
-</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention- New policy configuration options available for inline network and Edge for Business policies </h2>
 <p class="description">Admins can now scope Purview collection policies for unmanaged cloud apps based on the presence of sensitivity labels, enabling more precise discovery of sensitive activity across inline network traffic and the Edge for Business browser. Purview DLP policies also support "URL contains text" as a condition and exception, providing finer control over unmanaged cloud app usage across the network and Edge for Business, along with configurable email notifications to alert end users when activities are blocked.</p>
 <p class="meta">Status: Launched | GA Date: April CY2026
@@ -1694,18 +1681,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention – Reduce policy sync status SLA on the Purview UI from 2 hours to 30 mins</h2>
-<p class="description">Admin should be able to see the Endpoint DLP policy sync status on the Purview portal within 30 mins.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Preview Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Insider Risk Management-Priority content support for Risky AI usage</h2>
