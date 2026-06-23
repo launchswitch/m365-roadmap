@@ -8,6 +8,88 @@
 <h1>Microsoft Purview Roadmap</h1>
 <p>Total items: 346</p>
 <section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation</h2>
+<p class="description">AI-powered visibility into DLP policy deployment across devices, helping admins track sync progress and understand enforcement coverage. They proactively identify impacted devices, explain root causes of sync failures, and guide admins with recommended actions to quickly diagnose and resolve issues.
+</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Lifecycle Management - DLM Meter Change</h2>
+<p class="description">Data Lifecycle Management (DLM) billing will be based on the volume of data retained. For example, any number of non‑Microsoft 365 generative AI prompts and responses that collectively amount to 1 GB of retained data will be billed at $0.25 per GB per month (equivalent to ~$0.0082 per GB per day). In the updated model, DLM is billed based on the total volume of text messages managed by a DLM policy. Each non‑Microsoft 365 generative AI prompt and response is treated as an individual text message and is retained and deleted according to the configured Microsoft Purview retention settings. Billing is calculated on the managed text messages in storage, at a rate equivalent to $6 per one million text messages per month. Customer impact Customers will need to migrate from the legacy meter to the new meter. Based on current analysis, the overall cost impact is expected to be cost‑neutral or lower for customers under the new billing model.
+</p>
+<p class="meta">Status: In development | GA Date: August CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation</h2>
+<p class="description">AI agent skill to detect and alert unhealthy policy sync and device configuration.</p>
+<p class="meta">Status: In development | GA Date: August CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management-AI app selection for Generative AI apps indicators</h2>
+<p class="description">Customers can precisely choose which AI app they should use to detect any of the Generative AI apps indicators. This is applicable to the following indicators: "Entering risky prompts in Copilot", "Receiving sensitive responses from Copilot", "Entering risky prompts in enterprise AI apps", and "Receiving sensitive responses from enterprise AI apps". Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
+</p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Preview Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Lifecycle Management - Power Automate integration with records management </h2>
+<p class="description">Initiate a Power Automate workflow when the item reaches the end of its retention period. For example, execute a complex disposition approval process or move the file to an archive.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Data Lifecycle Management - Apply a retention policy to Microsoft Planner content  </h2>
+<p class="description">Introducing Data lifecycle management capabilities for Microsoft Planner. Compliance admins can now create a retention policy to manage content located in Microsoft Planner such as tasks for plans associated with an Microsoft 365 Group.</p>
+<p class="meta">Status: In development | GA Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Apply sensitivity labels with user-defined permissions in Office for the web in Microsoft 365</h2>
+<p class="description">Office for the web in Microsoft 365 supports the application of sensitivity labels with user-defined permissions.</p>
+<p class="meta">Status: Launched | GA Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Excel, Microsoft Purview, PowerPoint, Word</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
 <h2>Microsoft Purview: Data Lifecycle Management - Adaptive Protection integration with Data Lifecycle Management</h2>
 <p class="description">Adaptive Protection in Microsoft Purview helps you protect your organization’s data by integrating dynamic insider risk levels, determined by data related activities, with various policy engines to automatically moving users in and out of policies as their risk levels change over time. The integration with Data Lifecycle Management will automatically apply retention labels to preserve deleted emails and files based on a user’s insider risk level. </p>
 <p class="meta">Status: In development | GA Date: August CY2026
@@ -416,18 +498,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation</h2>
-<p class="description">AI-powered visibility into DLP policy deployment across devices, helping admins track sync progress and understand enforcement coverage. They proactively identify impacted devices, explain root causes of sync failures, and guide admins with recommended actions to quickly diagnose and resolve issues.
-</p>
-<p class="meta">Status: In development | GA Date: August CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: eDiscovery - Advanced Review Set Explorer</h2>
 <p class="description">The Advanced Review Set Explorer empowers reviewers to harness the power of real-time big data analytics on their review set data. This tool enhances data analysis by offering insights such as identifying top item types, spotting patterns, and trends within the review set. Reviewers can utilize powerful Kusto query constructs like complex filtering, pattern-based text extraction, and data format parsing to analyze and find key information specific to their case or organization. The results can then be visualized using various flexible charting solutions, providing a comprehensive understanding of the data's story. </p>
 <p class="meta">Status: In development | GA Date: August CY2026
@@ -509,18 +579,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Policy Sync & Device Health AI-Powered Investigation</h2>
-<p class="description">AI agent skill to detect and alert unhealthy policy sync and device configuration.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
@@ -903,18 +961,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Lifecycle Management - DLM Meter Change</h2>
-<p class="description">Data Lifecycle Management (DLM) billing will be based on the volume of data retained. For example, any number of non‑Microsoft 365 generative AI prompts and responses that collectively amount to 1 GB of retained data will be billed at $0.25 per GB per month (equivalent to ~$0.0082 per GB per day). In the updated model, DLM is billed based on the total volume of text messages managed by a DLM policy. Each non‑Microsoft 365 generative AI prompt and response is treated as an individual text message and is retained and deleted according to the configured Microsoft Purview retention settings. Billing is calculated on the managed text messages in storage, at a rate equivalent to $6 per one million text messages per month. Customer impact Customers will need to migrate from the legacy meter to the new meter. Based on current analysis, the overall cost impact is expected to be cost‑neutral or lower for customers under the new billing model.
-</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Lifecycle Management - Insights and policy recommendations on sensitive M365 data for better Data Security and Compliance posture</h2>
@@ -1544,19 +1590,6 @@ Data Security AI Admin</p>
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management-AI app selection for Generative AI apps indicators</h2>
-<p class="description">Customers can precisely choose which AI app they should use to detect any of the Generative AI apps indicators. This is applicable to the following indicators: "Entering risky prompts in Copilot", "Receiving sensitive responses from Copilot", "Entering risky prompts in enterprise AI apps", and "Receiving sensitive responses from enterprise AI apps". Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.
-</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Security Posture Management for AI: Fabric integration in Data Risk Assessment</h2>
 <p class="description">Within Purview's Data Security Posture Management (preview), Data Risk Assessment now supports scanning all Fabric workspaces for potentially overshared Fabric data (dashboards, reports, etc.). The new Fabric tab in Data Risk Assessment allows users to view default assessment results, create custom assessments for scoped Fabric workspaces, and take proactive actions to secure your Fabric data.</p>
 <p class="meta">Status: Launched | GA Date: April CY2026
@@ -1697,17 +1730,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Data Lifecycle Management - Apply a retention policy to Microsoft Planner content  </h2>
-<p class="description">Introducing Data lifecycle management capabilities for Microsoft Planner. Compliance admins can now create a retention policy to manage content located in Microsoft Planner such as tasks for plans associated with an Microsoft 365 Group.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Endpoint Data Loss Prevention - Optical Character Recognition (OCR) on Mac Endpoints</h2>
 <p class="description">Purview policies like Data loss prevention (DLP) auto labelling can scan for sensitive content in most of the textual files, but images are not supported for content scanning today on Mac endpoint devices. We are adding OCR support on Mac endpoints to detect sensitive content in images and apply policies to protect these images.</p>
 <p class="meta">Status: In development | GA Date: January CY2027
@@ -1763,17 +1785,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Apply sensitivity labels with user-defined permissions in Office for the web in Microsoft 365</h2>
-<p class="description">Office for the web in Microsoft 365 supports the application of sensitivity labels with user-defined permissions.</p>
-<p class="meta">Status: Rolling out | GA Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Excel, Microsoft Purview, PowerPoint, Word</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention– Enhanced content extraction and file type coverage for DLP on Mac devices</h2>
@@ -1837,17 +1848,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <h2>Microsoft Purview compliance portal: Communication Compliance - Advanced trainable classifiers to detect workplace safety scenarios</h2>
 <p class="description">New detections are being added to Communication Compliance that enables you to build safer online environments by detecting potential hate and violence then assigning severity scores to unsafe text across languages. These classifiers are built using large language models. Microsoft Purview Communication Compliance provides the tools to help organizations detect business conduct and regulatory compliance violations (e.g. SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to help ensure user-level privacy.</p>
 <p class="meta">Status: Launched | GA Date: December CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Lifecycle Management - Power Automate integration with records management </h2>
-<p class="description">Initiate a Power Automate workflow when the item reaches the end of its retention period. For example, execute a complex disposition approval process or move the file to an archive.</p>
-<p class="meta">Status: In development | GA Date: June CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
