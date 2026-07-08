@@ -6,7 +6,154 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 347</p>
+<p>Total items: 349</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts</h2>
+<p class="description">Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations. </p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Lifecycle Management - Graph API Support for Archive Mailboxes</h2>
+<p class="description">Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs getting deprecated by OCT 2026. </p>
+<p class="meta">Status: In development | GA Date: August CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Endpoint Data Loss Prevention — Endpoint DLP now supports a pre curated list of file extensions for the file extension condition</h2>
+<p class="description">Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention – Ability to protect files stored in the excluded folders in Windows</h2>
+<p class="description">Endpoint DLP now extends protection to files stored in commonly excluded Windows folders, including Temp and AppData. This helps improve coverage by detecting and protecting sensitive data in these locations.</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Allow customer to scope JIT Audit to specific user or user group</h2>
+<p class="description">Enable customers to include or exclude users/user groups from Just‑In‑Time (JIT) Audit, ensuring audits are generated only for the selected users or groups.</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management - Microsoft Fabric, Cloud storage, cloud service activities as triggers </h2>
+<p class="description">With this update, the indicators belonging to cloud storage apps (Box, Dropbox, Google Drive), cloud services (Azure, Amazon Web Services) and Microsoft Fabric (Power BI, Lakehouse) will be supported as triggers in Data leaks policy. With triggers, customers can define the conditions for bringing the user into the scope of a policy while the respective indicators are used to determine risk score.
+
+Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
+<p class="meta">Status: Launched | GA Date: July CY2026
+ | Preview Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection - Sensitivity label support in Engage</h2>
+<p class="description">Organizations can now manually apply Purview Information Protection sensitivity labels in Engage. Allowing admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage communities. End users in Engage will be able to then manually apply labels to communities and in turn classify and protect their sensitive data via privacy and external user access controls. </p>
+<p class="meta">Status: Launched | GA Date: May CY2026
+ | Preview Date: March CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection - Policy sync status for M365 Label publishing policies</h2>
+<p class="description">Admins can now see the sync status of sensitivity label publishing policies directly in the Purview portal. This provides clear confirmation that label policy changes have been fully applied across Microsoft 365 workloads, reducing guesswork, speeding troubleshooting, and increasing confidence during large scale label deployments.</p>
+<p class="meta">Status: Launched | GA Date: April CY2026
+ | Preview Date: March CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection - Sensitivity label inheritance for Teams meeting artifacts</h2>
+<p class="description">Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at scale.</p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Preview Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection - Exclude modern groups / include dynamic security groups support for sensitivity label policies </h2>
+<p class="description">To provide more flexibility, admins can now exclude modern Microsoft 365 groups and scope sensitivity label policies to dynamic and non-mail enabled security groups—expanding policy targeting beyond individual users and mail enabled groups.</p>
+<p class="meta">Status: Launched | GA Date: May CY2026
+ | Preview Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management – Ability to preview content in Insider Risk Management Alerts</h2>
+<p class="description">Insider Risk Management is excited to announce the ability to preview content directly within an IRM alert without having to create a case. Users with appropriate permissions will be able to preview relevant files referenced directly within activity explorer in each alert.
+
+Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
+<p class="meta">Status: Rolling out | GA Date: July CY2026
+ | Preview Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection- New Summary Metrics in Content Explorer for Unscanned Files and Classification History Details</h2>
+<p class="description">Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:
+1. Unscanned Files Summary
+Displays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.
+2. Classification History Insights
+Shows trends and details of classification changes over time, helping admins to discover the stale data in their organization</p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - Endpoint DLP now detects sensitivity labels on files inside archives</h2>
 <p class="description">Endpoint Data Loss Prevention (DLP) is changing the way archive files, such as  .zip  and similar container formats, are classified and enforced. This update  improves detection accuracy and gives administrators finer control over how content within archives is protected.</p>
@@ -478,20 +625,6 @@ communication compliance. This item is no longer accurate and is being removed f
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management – Ability to preview content in Insider Risk Management Alerts</h2>
-<p class="description">Insider Risk Management is excited to announce the ability to preview content directly within an IRM alert without having to create a case. Users with appropriate permissions will be able to preview relevant files referenced directly within activity explorer in each alert.
-
-Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
@@ -1112,17 +1245,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Endpoint Data Loss Prevention — Endpoint DLP now supports a pre curated list of file extensions for the file extension condition</h2>
-<p class="description">Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Security Investigations – Introducing OCR support</h2>
 <p class="description">Microsoft Purview Data Security Investigations (DSI) is extending our investigations by adding optical character recognition (OCR), extracting text from images and incorporating it into investigation data. This enables AI-powered deep content analysis to uncover data security risks that are often hidden within visual content.</p>
 <p class="meta">Status: In development | GA Date: July CY2026
@@ -1157,28 +1279,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention – Ability to protect files stored in the excluded folders in Windows</h2>
-<p class="description">Endpoint DLP now extends protection to files stored in commonly excluded Windows folders, including Temp and AppData. This helps improve coverage by detecting and protecting sensitive data in these locations.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Allow customer to scope JIT Audit to specific user or user group</h2>
-<p class="description">Enable customers to include or exclude users/user groups from Just‑In‑Time (JIT) Audit, ensuring audits are generated only for the selected users or groups.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - Reduce policy sync status SLA on the Purview UI from 2 hours to 30 mins</h2>
@@ -1748,18 +1848,6 @@ Data Security AI Admin</p>
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection - Exclude modern groups / include dynamic security groups support for sensitivity label policies </h2>
-<p class="description">To provide more flexibility, admins can now exclude modern Microsoft 365 groups and scope sensitivity label policies to dynamic and non-mail enabled security groups—expanding policy targeting beyond individual users and mail enabled groups.</p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Preview Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Information Protection - Sensitivity label grouping modernization</h2>
 <p class="description">To help improve label usability and configuration, the sensitivity labeling scheme will be simplified to only consist of labels and label groupings. These new label groupings allow admins to better organize and categorize their labels (previously done via parent labels).</p>
 <p class="meta">Status: In development | GA Date: August CY2026
@@ -1780,20 +1868,6 @@ Data Security AI Admin</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management - Microsoft Fabric, Cloud storage, cloud service activities as triggers </h2>
-<p class="description">With this update, the indicators belonging to cloud storage apps (Box, Dropbox, Google Drive), cloud services (Azure, Amazon Web Services) and Microsoft Fabric (Power BI, Lakehouse) will be supported as triggers in Data leaks policy. With triggers, customers can define the conditions for bringing the user into the scope of a policy while the respective indicators are used to determine risk score.
-
-Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Information Protection– Override manually applied labels and Remove labels with Auto-labeling</h2>
@@ -2038,46 +2112,10 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection - Sensitivity label support in Engage</h2>
-<p class="description">Organizations can now manually apply Purview Information Protection sensitivity labels in Engage. Allowing admins to create labels and configure label publishing policies to determine which users and groups can manually label content in Engage communities. End users in Engage will be able to then manually apply labels to communities and in turn classify and protect their sensitive data via privacy and external user access controls. </p>
-<p class="meta">Status: In development | GA Date: May CY2026
- | Preview Date: March CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR </h2>
 <p class="description">Data Security Triage Agent summaries and categorizations for DLP alerts will be made available in DLP Alerts in Microsoft Defender XDR.</p>
 <p class="meta">Status: In development | GA Date: August CY2026
  | Preview Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection - Policy sync status for M365 Label publishing policies</h2>
-<p class="description">Admins can now see the sync status of sensitivity label publishing policies directly in the Purview portal. This provides clear confirmation that label policy changes have been fully applied across Microsoft 365 workloads, reducing guesswork, speeding troubleshooting, and increasing confidence during large scale label deployments.</p>
-<p class="meta">Status: In development | GA Date: April CY2026
- | Preview Date: March CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection - Sensitivity label inheritance for Teams meeting artifacts</h2>
-<p class="description">Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and simplifying protection at scale.</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: May CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
@@ -2153,22 +2191,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Products: Microsoft Information Protection, Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Desktop, Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection- New Summary Metrics in Content Explorer for Unscanned Files and Classification History Details</h2>
-<p class="description">Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:
-1. Unscanned Files Summary
-Displays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.
-2. Classification History Insights
-Shows trends and details of classification changes over time, helping admins to discover the stale data in their organization</p>
-<p class="meta">Status: In development | GA Date: August CY2026
- | Preview Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
