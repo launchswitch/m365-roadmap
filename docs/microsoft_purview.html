@@ -8,6 +8,45 @@
 <h1>Microsoft Purview Roadmap</h1>
 <p>Total items: 350</p>
 <section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management - DS Triage Agent for IRM available in Defender</h2>
+<p class="description">We’re introducing support for Insider Risk Management (IRM) alert agent summaries within Microsoft Defender, enabling investigators to access key triage insights directly in the Defender alert queue.
+When the IRM Triage Agent is active, IRM alerts surfaced in Microsoft Defender will now include the agent summary—such as agent categorization, investigation summary, identified risk patterns, and relevant user details—helping analysts quickly assess alert severity without leaving their existing Defender workflows.
+For deeper analysis, investigators can access the full IRM investigation experience within the Microsoft Purview portal.
+Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p>
+<p class="meta">Status: In development | GA Date: December CY2026
+ | Preview Date: August CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - Collection and DLP Policies for Intune-Policy Managed Apps</h2>
+<p class="description">We are introducing a new integrated Microsoft Purview Data Loss Prevention (DLP) capability for Intune Mobile Application Management (MAM)-protected mobile apps, enabling organizations to apply content‑aware protection policies to sensitive data on mobile devices. This integration ensures that clipboard actions in managed mobile apps are evaluated against Purview DLP policies before sharing is allowed, helping reduce data leakage, insider risk, and exposure to advanced threats across mobile workflows. Additionally, Microsoft Purview Collection policies can be used to govern how sensitive data is being handled in mobile apps.  </p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Preview Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention – Enrich Defender alerts Graph API with DLP event data</h2>
+<p class="description">Enhance current API infrastructure to provide easy and simple way for customers to export data to integrate with SIEM tools, create automated workflows and generate customizable reports. Today alert data is present in Graph API and DLP rule match event details are present in Management API. This work enriches the graph API with DLP event data to make correlation and integration easy for customers.</p>
+<p class="meta">Status: Rolling out | GA Date: June CY2026
+ | Preview Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention for Microsoft 365 Copilot to safeguard prompts for government clouds</h2>
 <p class="description">We are expanding Microsoft Purview DLP for Microsoft 365 Copilot to safeguard prompts containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot and agents from returning a response when prompts contain sensitive data or using that sensitive data for grounding in Microsoft 365 or the web. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot. </p>
 <p class="meta">Status: Rolling out | GA Date: June CY2026
@@ -28,18 +67,6 @@
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention - Collection and DLP Policies for Intune-Policy Managed Apps</h2>
-<p class="description">We are introducing a new integrated Microsoft Purview Data Loss Prevention (DLP) capability for Intune Mobile Application Management (MAM)-protected mobile apps, enabling organizations to apply content‑aware protection policies to sensitive data on mobile devices. This integration ensures that clipboard actions in managed mobile apps are evaluated against Purview DLP policies before sharing is allowed, helping reduce data leakage, insider risk, and exposure to advanced threats across mobile workflows. Additionally, Microsoft Purview Collection policies can be used to govern how sensitive data is being handled in mobile apps.  </p>
-<p class="meta">Status: In development | GA Date: September CY2026
- | Preview Date: November CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts</h2>
@@ -1190,18 +1217,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention – Enrich Defender alerts Graph API with DLP event data</h2>
-<p class="description">Enhance current API infrastructure to provide easy and simple way for customers to export data to integrate with SIEM tools, create automated workflows and generate customizable reports. Today alert data is present in Graph API and DLP rule match event details are present in Management API. This work enriches the graph API with DLP event data to make correlation and integration easy for customers.</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: New Microsoft Purview Data Security Posture Management Experience</h2>
@@ -3876,20 +3891,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Copilot (Microsoft 365), Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview Compliance Portal: Data Compliance to support Generative AI Applications  </h2>
-<p class="description">Detection, processing and storage of interactions done on Enterprise AI and AI applications such as Security Copilot, Copilot Studio and others under Microsoft Purview Data Compliance solutions including Data Lifecycle Management, eDiscovery, and Communication Compliance will begin using a pay-as-you-go pricing model on May 1 in preparation for general availability. Microsoft Purview Audit will only use pay-as-you-go pricing for audit logs related to non-Microsoft Enterprise AI and AI applications. Microsoft 365 Copilot Chat data (with or without a Copilot license) will not be impacted by these new pay-as-you-go meters. 
-Microsoft Purview Communication Compliance provides the tools to help organizations detect regulatory compliance violations (for example SEC or FINRA), such as sensitive or confidential information, harassing or threatening language, and sharing of adult content. Built with privacy by design, usernames are pseudonymized by default, role-based access controls are built in, investigators are opted in by an admin, and audit logs are in place to ensure user-level privacy. 
-</p>
-<p class="meta">Status: Launched | GA Date: June CY2025
- | Preview Date: May CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
