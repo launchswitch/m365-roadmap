@@ -8,6 +8,132 @@
 <h1>Microsoft Purview Roadmap</h1>
 <p>Total items: 342</p>
 <section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection - Rights Management connector – Certificate-based authentication</h2>
+<p class="description">The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.
+</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - Granular classification error controls (Exchange online) </h2>
+<p class="description">Granular Protections for Exchange Online is available in public preview. This release gives administrators fine-grained control to create DLP policies based on specific classification or text extraction failure types — such as timeout, throttling and other scan errors — rather than one blanket policy for all failure conditions.</p>
+<p class="meta">Status: In development | GA Date: August CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: eDiscovery – Enhancement of Loop and Copilot Pages in Review and Export</h2>
+<p class="description">Improves eDiscovery workflows for Loop and Copilot pages by enabling full indexing of page content for keyword search within review sets and adding HTML format support for export from search.</p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Security Investigations – notification and improved search capabilities</h2>
+<p class="description">We're introducing notification capabilities and search improvements to Microsoft Purview Data Security Investigations. Investigators will receive notifications when key investigation events occur, such as when AI jobs complete or when new data is added to scope. Search improvements include enhanced query building to more easily identify potentially impacted data
+</p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management- Insider risk management for agents</h2>
+<p class="description">As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. 
+
+To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. 
+
+Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Insider Risk Management-Insider risk management for agents</h2>
+<p class="description">As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. Updated January 30: This feature is still in development with a planned release of April 2026. We apologize for the inconvenience. </p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Preview Date: December CY2025
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Information Protection- New Summary Metrics in Content Explorer for Unscanned Files and Classification History Details</h2>
+<p class="description">Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:
+1. Unscanned Files Summary
+Displays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.
+2. Classification History Insights
+Shows trends and details of classification changes over time, helping admins to discover the stale data in their organization</p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Preview Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Scanner data export for custom reporting</h2>
+<p class="description">Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Preview Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High</p>
+<p class="tags">Platforms: Desktop</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Data Loss Prevention for endpoints - Optical character recognition (OCR) support for embedded images in endpoint</h2>
+<p class="description">This release will extend OCR support from standalone images (JPEG, JPG, PNG, BMP, TIFF, and PDF) to images embedded inside the following files and file types: Office files (XLSX, DOCX, PPTX), container files (zip, rar, 7z, and more), and PDF files. Image-only PDF files are already supported, and this this release will support hybrid PDF files containing images and searchable text. Updated May 20, 2026: We have paused rollout and will resume soon. Thank you for your patience. </p>
+<p class="meta">Status: Launched | GA Date: June CY2026
+ | Preview Date: April CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal: Data Loss Prevention - Optical character recognition (OCR) support for endpoint</h2>
+<p class="description"><div>Optical character recognition (OCR) support will detect sensitive content in images and subsequently apply data loss prevention (DLP) policies to prevent exfiltration of that sensitive data on your Windows endpoint devices. This release supports key file types like JPG, JPEG, PNG, TIFF, BMP and PDF (image only PDF). </div></p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention - AI Powered Data Loss Prevention Policy Optimizer</h2>
 <p class="description">DLP Policy Optimizer uses AI to analyze your organization’s DLP policies, rule structure, and activity signals to identify optimization opportunities that are difficult to detect manually. It highlights overlapping rules, redundant conditions, misconfigurations, and sources of excessive noise, and presents prioritized recommendations with supporting evidence and suggested actions. This enables you to reduce false positives and alert noise, improve policy precision, and simplify policy management with confidence.
 </p>
@@ -209,22 +335,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection- New Summary Metrics in Content Explorer for Unscanned Files and Classification History Details</h2>
-<p class="description">Enhance Content Explorer by introducing new summary metrics that provide better visibility into scanning and classification activities. This update will include:
-1. Unscanned Files Summary
-Displays the count and percentage of files that have not been scanned for classification, helping admins identify gaps and take corrective action.
-2. Classification History Insights
-Shows trends and details of classification changes over time, helping admins to discover the stale data in their organization</p>
-<p class="meta">Status: In development | GA Date: November CY2026
- | Preview Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
@@ -810,17 +920,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: eDiscovery – Enhancement of Loop and Copilot Pages in Review and Export</h2>
-<p class="description">Improves eDiscovery workflows for Loop and Copilot pages by enabling full indexing of page content for keyword search within review sets and adding HTML format support for export from search.</p>
-<p class="meta">Status: Rolling out | GA Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention- Data Loss Prevention to safeguard sensitive web search in Microsoft 356 Copilot and Copilot Chat</h2>
 <p class="description">We are expanding Microsoft Purview DLP for Microsoft 365 Copilot and Copilot Chat to safeguard web searches containing sensitive data. This real-time control helps organizations mitigate data leakage and oversharing risks by preventing Microsoft 365 Copilot and agents from using sensitive data for external web search. This capability currently extends to Microsoft 365 Copilot and agents built in Copilot Studio that are published to Microsoft 365 Copilot.</p>
 <p class="meta">Status: Launched | GA Date: June CY2026
@@ -1004,48 +1103,9 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Data Security Investigations – notification and improved search capabilities</h2>
-<p class="description">We're introducing notification capabilities and search improvements to Microsoft Purview Data Security Investigations. Investigators will receive notifications when key investigation events occur, such as when AI jobs complete or when new data is added to scope. Search improvements include enhanced query building to more easily identify potentially impacted data
-</p>
-<p class="meta">Status: Rolling out | GA Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Endpoint Data Loss Prevention - Device Health Reporting Dashboard</h2>
 <p class="description">This dashboard will allow admins to view the device health across all their devices to ensure the system is healthy and ready to receive policy updates and quickly identify devices that are not ready.</p>
 <p class="meta">Status: Launched | GA Date: May CY2026
- | Preview Date: April CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management- Insider risk management for agents</h2>
-<p class="description">As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. 
-
-To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. 
-
-Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Data Loss Prevention for endpoints - Optical character recognition (OCR) support for embedded images in endpoint</h2>
-<p class="description">This release will extend OCR support from standalone images (JPEG, JPG, PNG, BMP, TIFF, and PDF) to images embedded inside the following files and file types: Office files (XLSX, DOCX, PPTX), container files (zip, rar, 7z, and more), and PDF files. Image-only PDF files are already supported, and this this release will support hybrid PDF files containing images and searchable text. Updated May 20, 2026: We have paused rollout and will resume soon. Thank you for your patience. </p>
-<p class="meta">Status: Rolling out | GA Date: June CY2026
  | Preview Date: April CY2026
  | Roadmap Status: Include this month
 </p>
@@ -1078,35 +1138,10 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Scanner data export for custom reporting</h2>
-<p class="description">Learn about the state of your scanned repositories and create custom reports with the information protection scanner. Labeling, classification and protection actions on scanned files are stored in SQL tables that form a foundation to feed into custom reports.</p>
-<p class="meta">Status: In development | GA Date: August CY2026
- | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High</p>
-<p class="tags">Platforms: Desktop</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview compliance portal: Information Protection - Sensitivity label grouping modernization</h2>
 <p class="description">To help improve label usability and configuration, the sensitivity labeling scheme will be simplified to only consist of labels and label groupings. These new label groupings allow admins to better organize and categorize their labels (previously done via parent labels).</p>
 <p class="meta">Status: Launched | GA Date: December CY2025
  | Preview Date: July CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Information Protection - Rights Management connector – Certificate-based authentication</h2>
-<p class="description">The Microsoft Rights Management (RMS) connector is moving from shared-secret authentication to certificate-based authentication, improving its security posture. With this update, administrators configure their own Microsoft Entra app registration and certificate, then use the new PowerShell module to configure the certificate for each workload (Connector, Exchange, SharePoint, and FCI). New PowerShell cmdlets handle certificate import, registry configuration, private-key permissions, and validation. As part of this change, the connector setup no longer provisions an Entra service principal or issues a shared secret on the customer's behalf. Customers should plan to register an Entra ID application and upload a certificate before installing or upgrading the connector.
-</p>
-<p class="meta">Status: In development | GA Date: August CY2026
- | Preview Date: June CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
@@ -1341,18 +1376,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Insider Risk Management-Insider risk management for agents</h2>
-<p class="description">As AI agents become deeply embedded in enterprise ecosystems, they are evolving beyond simple tools or workflows into a digital workforce. These agents can interpret intent, access and manipulate enterprise data, execute actions and even make real-time decisions. In many ways, they operate like human insiders only with machine-speed data processing capabilities. To govern and protect these agents effectively, Microsoft Purview Insider Risk Management is being expanded to agents, with specific indicators and insider risk score built for agents based on agentic activities. Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy. Updated January 30: This feature is still in development with a planned release of April 2026. We apologize for the inconvenience. </p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: December CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Information Protection – Auto-labeling Simulation Evaluation</h2>
 <p class="description">The Simulation Grader helps admins understand and improve auto‑labeling accuracy before enforcing a policy. When enabled during simulation, matched items are evaluated by an AI-powered grader to determine whether each match is a true positive or false positive, along with an explanation of why the content matched. The results roll up into clear policy‑level accuracy insights and file‑level evaluation details, giving admins confidence to refine conditions, upgrade to smarter classifiers, and move policies to enforcement with greater trust.</p>
 <p class="meta">Status: In development | GA Date: June CY2026
@@ -1542,18 +1565,6 @@ For this GA release, we’re introducing expanded coverage (which also includes 
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention - Granular classification error controls (Exchange online) </h2>
-<p class="description">Granular Protections for Exchange Online is available in public preview. This release gives administrators fine-grained control to create DLP policies based on specific classification or text extraction failure types — such as timeout, throttling and other scan errors — rather than one blanket policy for all failure conditions.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
@@ -2579,17 +2590,6 @@ Simulation Mode mitigates these risks by allowing you to validate classifier qua
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Data Loss Prevention - Optical character recognition (OCR) support for endpoint</h2>
-<p class="description"><div>Optical character recognition (OCR) support will detect sensitive content in images and subsequently apply data loss prevention (DLP) policies to prevent exfiltration of that sensitive data on your Windows endpoint devices. This release supports key file types like JPG, JPEG, PNG, TIFF, BMP and PDF (image only PDF). </div></p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Insider Risk Management - Risky AI usage</h2>
