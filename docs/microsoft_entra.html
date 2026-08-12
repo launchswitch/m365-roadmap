@@ -6,7 +6,18 @@
 </head>
 <body>
 <h1>Microsoft Entra Roadmap</h1>
-<p>Total items: 11</p>
+<p>Total items: 12</p>
+<section class="roadmap-item">
+<h2>Microsoft Entra: Windows Hello for Business and macOS Platform Single Sign-on can now be used as a second factor for MFA</h2>
+<p class="description">Windows Hello for Business (WHfB) and macOS Platform SSO (macOS PSSO) can now satisfy multifactor authentication as a standalone second factor. Previously, these methods only counted as MFA during primary sign-in, and users needed a separate passkey to complete step-up prompts, Authentication Strength policies, and sign-in frequency checks. With this change, WHfB and macOS PSSO work on their own for those scenarios, so more of your users can rely on strong, phishing-resistant sign-in without registering an extra method. What you need to know: Users who have only WHfB or macOS PSSO are now treated as MFA-capable and will no longer be automatically prompted to register another method. Because WHfB and macOS PSSO are tied to a specific device, we recommend having users register a portable method, such as a passkey or Microsoft Authenticator, during onboarding so they can complete MFA from any device.</p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Entra</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC</p>
+<p class="tags">Platforms: Desktop, Mac</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Entra: Upcoming changes to federatedTokenValidationPolicy default settings </h2>
 <p class="description">The federatedTokenValidationPolicy is a resource type in Microsoft Graph (beta) that governs the validation of federated authentication tokens and allows customers to configure a rule to block logins where internalDomainFederation does not match UPN domain. The feature by default requires manual configuration in the tenant to prohibit cross-domain logins. To strengthen security with cross-domain sign-in we will change the default rule for federatedTokenValidationPolicy to block logins where internalDomainFederation does not match UPN domain. This internalDomainFederation object is typically created automatically during federation setup with AD federation server or other IdPs.</p>

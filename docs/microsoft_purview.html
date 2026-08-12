@@ -8,6 +8,90 @@
 <h1>Microsoft Purview Roadmap</h1>
 <p>Total items: 336</p>
 <section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Protect sensitive data over FTP and SFTP with Endpoint DLP</h2>
+<p class="description">Endpoint DLP support for FTP and SFTP enables organizations to monitor and protect sensitive data transferred from managed endpoints using FTP and SFTP, helping prevent unauthorized data exfiltration while maintaining visibility and control.</p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Preview Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: eDiscovery - In-product diagnostics to troubleshoot common challenges</h2>
+<p class="description">Self-service diagnostics help identify common issues with case permissions, security filters, and policy status. The experience highlights potential misconfigurations and provides simple guidance to help customers understand and resolve them. This brings basic troubleshooting into the product and helps eDiscovery admins overcome common challenges.</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Preview Date: August CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts</h2>
+<p class="description">Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations. </p>
+<p class="meta">Status: Rolling out | GA Date: August CY2026
+ | Preview Date: July CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - Count of Labelled Documents Condition</h2>
+<p class="description">This release introduces a new condition for Exchange Online policies: “Count of labeled documents is greater than.”  This condition evaluates the number of attachments in an email message that carry a matching sensitivity label. When the count exceeds a defined threshold, the DLP rule is triggered, and configured actions are applied. This capability enables detection of high-volume data exfiltration scenarios, where multiple sensitive files—individually low-risk—collectively represent a significant compliance or security risk. Existing conditions evaluate file content, but do not provide controls based on the volume of labeled attachments.</p>
+<p class="meta">Status: In development | GA Date: December CY2026
+ | Preview Date: November CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Loss Prevention - Reusable Global List for Exchange Online</h2>
+<p class="description">Reusable Lists centralize management of keywords, domains, and email addresses, eliminating duplication across rules and reducing the effort required to maintain large policies.</p>
+<p class="meta">Status: In development | GA Date: January CY2027
+ | Preview Date: December CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Lifecycle Management– Hard delete capability for OneDrive and SharePoint through secure priority cleanup workflows</h2>
+<p class="description">Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads. Deletion of content to adhere to compliance requirements, admins can set up Retention policies or labels. To help prevent inadvertent data loss, M365 retention labels policies and M365 retention policies do not hard delete content immediately and keeps the data in Recycle Bins for 93 days for ODSP. Hard delete itself is a very costly process as it opens Microsoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression. Priority Cleanup feature allows users to bypass retention, and eDiscovery holds to help customers comply to changing legal/compliance requirements or manage data spillage scenarios. This feature requires the ability to hard delete specific files from the scoped locations.  Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.</p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Preview Date: August CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview compliance portal:  eDiscovery (Premium) – Hold reports</h2>
+<p class="description">Out-of-the-box reports that contain information about all legal holds associated with eDiscovery cases in the Microsoft Purview compliance portal. Sort and filter your view based on various criteria and download the aggregated information for further analysis. Note: The status and release month has been updated to reflect the current state. We apologize for any inconvenience this may cause.</p>
+<p class="meta">Status: In development | GA Date: September CY2026
+ | Preview Date: December CY2023
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
 <h2>Microsoft Purview: Role groups UI enhancements</h2>
 <p class="description">The Role groups page in the Microsoft Purview compliance portal now allows admins to look up permissions by roles and memberships.</p>
 <p class="meta">Status: Launched | GA Date: July CY2026
@@ -315,18 +399,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="description">Introduce an AI-powered capability leveraging Microsoft Security Copilot to automatically generate natural language explanations of changes made to DLP policies after each update within Microsoft Purview. This feature will analyze policy version deltas (pre-update vs. post-update) and produce a structured, human-readable summary that clearly explains: What changed Where the change occurred (rule, condition, action, location, etc.) The impact of the change The potential enforcement implications The goal is to eliminate manual policy diff analysis, reduce configuration ambiguity, and improve governance transparency for compliance and security administrators.</p>
 <p class="meta">Status: In development | GA Date: October CY2026
  | Preview Date: September CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Lifecycle Management– Hard delete capability for OneDrive and SharePoint through secure priority cleanup workflows</h2>
-<p class="description">Data Lifecycle Management allows compliance admins to retain, review and delete content in M365 workloads. Deletion of content to adhere to compliance requirements, admins can set up Retention policies or labels. To help prevent inadvertent data loss, M365 retention labels policies and M365 retention policies do not hard delete content immediately and keeps the data in Recycle Bins for 93 days for ODSP. Hard delete itself is a very costly process as it opens Microsoft to heavy legal implications in case of any data loss incident that may occur due to a misconfigured policy or regression. Priority Cleanup feature allows users to bypass retention, and eDiscovery holds to help customers comply to changing legal/compliance requirements or manage data spillage scenarios. This feature requires the ability to hard delete specific files from the scoped locations.  Ability to select hard delete configuration for a Priority cleanup policy for OneDrive and SharePoint content and skip recycle bins.</p>
-<p class="meta">Status: In development | GA Date: September CY2026
- | Preview Date: July CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
@@ -1322,18 +1394,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Protect sensitive data over FTP and SFTP with Endpoint DLP</h2>
-<p class="description">Endpoint DLP support for FTP and SFTP enables organizations to monitor and protect sensitive data transferred from managed endpoints using FTP and SFTP, helping prevent unauthorized data exfiltration while maintaining visibility and control.</p>
-<p class="meta">Status: In development | GA Date: August CY2026
- | Preview Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Lifecycle Management - Retention capabilities based on files Last Accessed in OneDrive and SharePoint</h2>
 <p class="description">Ability to apply Retention labels and policies to items on OneDrive and SharePoint based on when the items were last accessed by an user.</p>
 <p class="meta">Status: In development | GA Date: August CY2026
@@ -1475,18 +1535,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: eDiscovery - In-product diagnostics to troubleshoot common challenges</h2>
-<p class="description">Self-service diagnostics help identify common issues with case permissions, security filters, and policy status. The experience highlights potential misconfigurations and provides simple guidance to help customers understand and resolve them. This brings basic troubleshooting into the product and helps eDiscovery admins overcome common challenges.</p>
-<p class="meta">Status: In development | GA Date: September CY2026
- | Preview Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: DSPM data risk assessments: item-level investigation & remediation</h2>
 <p class="description">Microsoft Purview Data risk assessments now support item-level investigation and remediation of SharePoint data. New insights like sensitivity label and sharing link information help users identify items at risk of oversharing. Users are empowered to remediate overshared items by resolving, notifying, applying a sensitivity label, or removing sharing links for selected item(s). This helps organizations proactively reduce data exposure, strengthen compliance posture, and ensure sensitive data are only accessible to the right people.</p>
 <p class="meta">Status: Launched | GA Date: April CY2026
@@ -1530,18 +1578,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention - User Based Aggregation of DLP Alerts</h2>
-<p class="description">Enable aggregation of DLP alerts based on common entities user even when multiple rules are matched. This feature should consolidate related alert events into a single alert object to: Reduce alert noise, simplify investigation workflows, enhance contextual understanding of violations. </p>
-<p class="meta">Status: In development | GA Date: August CY2026
- | Preview Date: July CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Endpoint Data Loss Prevention - Logged-in user details on the Purview device onboarding page</h2>
@@ -1676,18 +1712,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention - Count of Labelled Documents Condition</h2>
-<p class="description">This release introduces a new condition for Exchange Online policies: “Count of labeled documents is greater than.”  This condition evaluates the number of attachments in an email message that carry a matching sensitivity label. When the count exceeds a defined threshold, the DLP rule is triggered, and configured actions are applied. This capability enables detection of high-volume data exfiltration scenarios, where multiple sensitive files—individually low-risk—collectively represent a significant compliance or security risk. Existing conditions evaluate file content, but do not provide controls based on the volume of labeled attachments.</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Data Loss Prevention- Additional Diagnostics for Data Loss Prevention and Information Protection</h2>
 <p class="description">The below diagnostics will help users understand which sensitive information exist in their document and what labels applied and what policies have been triggered: DLP SharePoint Diagnostics DLP EXO Diagnostics Auto labeling diagnostics for SPO/ODB
 </p>
@@ -1766,18 +1790,6 @@ For this GA release, we’re introducing expanded coverage (which also includes 
 <p class="description">Microsoft Priva Privacy Risk Management extends its overexposure policies into data contained in Azure SQL, Azure Data Lake Storage, and Amazon S3. Organizations can create privacy policies that specify which data sources, databases, or storage buckets are in scope and Priva will automatically notify data asset owners when matches are detected.</p>
 <p class="meta">Status: Launched | GA Date: January CY2026
  | Preview Date: June CY2024
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Data Loss Prevention - Reusable Global List for Exchange Online</h2>
-<p class="description">Reusable Lists centralize management of keywords, domains, and email addresses, eliminating duplication across rules and reducing the effort required to maintain large policies.</p>
-<p class="meta">Status: In development | GA Date: July CY2026
- | Preview Date: June CY2026
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
@@ -3232,18 +3244,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal:  eDiscovery (Premium) – Hold reports</h2>
-<p class="description">Out-of-the-box reports that contain information about all legal holds associated with eDiscovery cases in the Microsoft Purview compliance portal. Sort and filter your view based on various criteria and download the aggregated information for further analysis. Note: The status and release month has been updated to reflect the current state. We apologize for any inconvenience this may cause.</p>
-<p class="meta">Status: In development | GA Date: June CY2026
- | Preview Date: December CY2023
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
 </section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Communication Compliance- Alert improvements</h2>
