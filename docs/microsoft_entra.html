@@ -6,7 +6,30 @@
 </head>
 <body>
 <h1>Microsoft Entra Roadmap</h1>
-<p>Total items: 12</p>
+<p>Total items: 14</p>
+<section class="roadmap-item">
+<h2>Microsoft Entra: Enhanced Security Accounts Manager (sAM) Account Name support for Microsoft Entra Domain Services</h2>
+<p class="description">Enhanced support for synchronizing the Security Accounts Manager account name (sAMAccountName) with Microsoft Entra Domain Services is now in Public Preview. This feature allows sAMAccountName to be populated from the onPremisesSamAccountName attribute in Microsoft Entra ID. Existing managed domains can enable the new synchronization behavior, while it is enabled by default for new managed domains. When enabled, existing hybrid users are updated during synchronization; cloud-only users without an onPremisesSamAccountName value continue to use mailNickname-based generation. The feature is available for Enterprise and Premium SKUs.</p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Preview Date: August CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Entra</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft 365: Entra ID Backup & Recovery</h2>
+<p class="description">Enable extended 30-day backup and recovery for a tenant's Entra objects via the Microsoft 365 Backup native app or M365 Backup Storage platform APIs. This capability allows customers and ISV apps to do a point in time restore of Entra objects to a last known good state to a rolling historical 30-day point. Advanced recovery features are currently limited to the Entra admin portal, but some user recovery actions will be possible via the M365 Backup native app UX in the M365 Admin center. Note that the existing 7-day recovery that comes with a customer's P1 & P2 licenses is already generally available and is independent of this roadmap item.</p>
+<p class="meta">Status: In development | GA Date: December CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft 365, Microsoft 365 admin center, Microsoft Entra</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Entra: Windows Hello for Business and macOS Platform Single Sign-on can now be used as a second factor for MFA</h2>
 <p class="description">Windows Hello for Business (WHfB) and macOS Platform SSO (macOS PSSO) can now satisfy multifactor authentication as a standalone second factor. Previously, these methods only counted as MFA during primary sign-in, and users needed a separate passkey to complete step-up prompts, Authentication Strength policies, and sign-in frequency checks. With this change, WHfB and macOS PSSO work on their own for those scenarios, so more of your users can rely on strong, phishing-resistant sign-in without registering an extra method. What you need to know: Users who have only WHfB or macOS PSSO are now treated as MFA-capable and will no longer be automatically prompted to register another method. Because WHfB and macOS PSSO are tied to a specific device, we recommend having users register a portable method, such as a passkey or Microsoft Authenticator, during onboarding so they can complete MFA from any device.</p>
