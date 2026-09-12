@@ -6,7 +6,18 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 323</p>
+<p>Total items: 321</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Endpoint Data Loss Prevention - Expand protection to Copilot + PC devices for Recall snapshots through custom policies</h2>
+<p class="description"><p>Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p></p>
+<p class="meta">Status: Rolling out | GA Date: May CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: GCC, GCC High, DoD</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Endpoint Data Loss Prevention-Archive File Classification Behavior Change for Windows Endpoints</h2>
 <p class="description"><p>We are updating archive file classification behavior on Windows endpoints to align with cloud workloads. This change improves consistency, reduces noise in event reporting, and enhances performance when processing archive files.</p></p>
@@ -1814,17 +1825,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 <p class="tags">Phase: General Availability</p>
 </section>
 <section class="roadmap-item">
-<h2>Microsoft Purview: Endpoint Data Loss Prevention - Expand protection to Copilot + PC devices for Recall snapshots through custom policies</h2>
-<p class="description">Microsoft Purview Endpoint data loss prevention is expanding coverage to Copilot + PCs initially to support Recall snapshots and determining whether policies exist to prevent capture of windows containing restricted sensitivity labels and Sensitive information types (SITs). Purview admins will author Endpoint DLP custom policies to integrate with Windows Copilot + PC Recall setup by Intune admins for Copilot + PC devices exclusively.</p>
-<p class="meta">Status: Rolling out | GA Date: May CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
 <h2>Microsoft Purview: Endpoint Data Loss Prevention - Logged-in user details on the Purview device onboarding page</h2>
 <p class="description">This update introduces logged-in user details (user email) on the device onboarding page for Windows devices bringing it in line with the experience for MacOS devices. ​Admins can now see which user is currently signed in on a device, making It faster to confirm ownership and troubleshoot issues. ​</p>
 <p class="meta">Status: Launched | GA Date: May CY2026
@@ -3528,32 +3528,6 @@ Admins with appropriate permissions can enable these indicators from the setting
 Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
 <p class="meta">Status: Launched | GA Date: September CY2025
  | Preview Date: July CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Upcoming Update to Audit Records for Microsoft Purview Role Group Changes</h2>
-<p class="description">To improve clarity and transparency, we’re updating the audit data for events related to Microsoft Purview role group membership changes. This update affects audit events under the SecurityComplianceRBAC workload (RecordType 87), specifically for operations for GrantPermission, DeletePermission. While the audit schema remains unchanged, the PreExecutionMessage and PostExecutionMessage fields will be refined to better reflect the nature of the changes captured in the logs. Action Required: If your organization consumes these audit log events programmatically (e.g., via scripts or automation tools), please review and update your parsing logic to accommodate the enhanced message content. Rollout Timeline: This change will be rolled out starting in August. We recommend validating your systems against the updated message format as soon as it becomes available in your environment.</p>
-<p class="meta">Status: Launched | GA Date: August CY2025
- | Preview Date: August CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Collection policies impact on IRM</h2>
-<p class="description">With this update, Microsoft Purview will start supporting collection policies. Collection policies allow customers to scope classification (SITs - Sensitive Information Types) and activities for scoped users. We recommend reviewing collection policies as they can be created by different Purview solution admins to ensure they are setup to detect the activities required by IRM policies
-
-Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies to manage security and compliance. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.  </p>
-<p class="meta">Status: Launched | GA Date: September CY2025
- | Preview Date: April CY2025
  | Roadmap Status: Include this month
 </p>
 <p class="tags">Products: Microsoft Purview</p>
