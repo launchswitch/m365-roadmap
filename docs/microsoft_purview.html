@@ -6,7 +6,41 @@
 </head>
 <body>
 <h1>Microsoft Purview Roadmap</h1>
-<p>Total items: 320</p>
+<p>Total items: 318</p>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Data Lifecycle Management-Legacy Teams retention policies covering Copilot will be treated as Teams-only</h2>
+<p class="description"><p>Some existing retention policies scoped to Microsoft Teams may currently also apply to Microsoft 365 Copilot interactions. As part of an upcoming change, these legacy Teams retention policies will be converted to—and treated as—Teams-only policies. They will no longer implicitly govern Copilot workloads.</p></p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Microsoft Purview: Unified Classification Management Experience</h2>
+<p class="description"><p>The Unified Classification Management Experience unifies every classifier in Microsoft Purview—Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers—into one place to discover, create, validate, and manage classifiers.</p></p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Endpoint Data Loss Prevention — Endpoint DLP now supports a pre curated list of file extensions for the file extension condition</h2>
+<p class="description"><p>Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.</p></p>
+<p class="meta">Status: In development | GA Date: December CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Purview</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Purview: Archive SharePoint files under retention policies </h2>
 <p class="description"><p>With the introduction of file archiving support in SharePoint Online, administrators are looking to seamlessly include archiving actions within their existing data retention policies. This means that, in addition to keeping or deleting data, admins want to now leverage Purview DLM to archive files according to organizational requirements, ensuring comprehensive governance across all stages of the content lifecycle in SPO. Retention based file archiving moves inactive content to low-cost storage, lowering costs with no compromise on Compliance, keeping data discoverable and making Copilot results highly relevant.</p></p>
@@ -154,18 +188,6 @@
 <p>The readiness for Microsoft Copilot experience in Purview DSPM helps organizations assess and improve their data readiness for Microsoft Copilot. It brings together insights into sensitive data exposure, oversharing, and protection coverage, helping security teams identify risks and assess progress toward a more secure Microsoft Copilot deployment.</p>
 <p>The new data explorer experience in Purview DSPM provides a centralized investigation experience that helps organizations understand where sensitive data exists across sites, review site-level access, and explore relevant data through preset views. It brings together sites, sensitive data, permissions, and preset views, to support more efficient investigations and reduce context switching.</p></p>
 <p class="meta">Status: In development | GA Date: January CY2027
- | Preview Date: September CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview: Unified Classification Management Experience</h2>
-<p class="description"><p>The Unified Classification Management Experience unifies every classifier in Microsoft Purview—Sensitive Information Types (SITs), Exact Data Match (EDM), fingerprint SITs, and trainable classifiers—into one place to discover, create, validate, and manage classifiers.</p></p>
-<p class="meta">Status: In development | GA Date: November CY2026
  | Preview Date: September CY2026
  | Roadmap Status: Include this month
 </p>
@@ -1388,17 +1410,6 @@ Microsoft Purview Insider Risk Management correlates various signals to identify
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Endpoint Data Loss Prevention — Endpoint DLP now supports a pre curated list of file extensions for the file extension condition</h2>
-<p class="description">Endpoint DLP now includes a pre curated list of file extensions for the file extension condition. Previously, file extensions were entered as free form text, which could result in unsupported or non-scannable extensions being used. This could lead to gaps in protection and increase processing overhead on endpoints. With the pre curated list, you can select only supported file extensions. This helps improve policy reliability and reduces unnecessary processing on endpoints.</p>
-<p class="meta">Status: In development | GA Date: September CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability</p>
 </section>
@@ -3516,42 +3527,6 @@ defined in DLP policies at the time of egress</span>. </div></p>
 </p>
 <p class="tags">Products: Microsoft Purview</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Insider Risk Management - Personal email triggers</h2>
-<p class="description">In this update, we are adding the recently added email indicators in Insider Risk Management as triggers. 1.  Sending email with attachments to free public domains - Users will be brought into scope of a policy when business-sensitive data is potentially leaked from a work email account to a free public domain email, potentially leading to a data security incident.  2. Sending email with attachments to self - Users will be brought into scope of a policy when business-sensitive data is potentially leaked from a work email account to user's personal email account or emailing self, potentially leading to a data security incident. 
-Admins with appropriate permissions can enable these indicators from the settings page and use these triggers in the data leaks or data leaks by priority users template.</p>
-<p class="meta">Status: Launched | GA Date: November CY2025
- | Preview Date: July CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability, Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview Information Protection: Doc library default labeling for SharePoint Online and Copilot</h2>
-<p class="description">This new capability further integrates SharePoint Online with Purview sensitivity labeling. SharePoint Online document library owners can set a new type of default label on the library, which automatically applies that label to all unprotected Word, Excel, PowerPoint, and PDF files within the library. This simplifies labeling in bulk across document libraries in an organization, enriches DLP and Copilot with signal to allow admins to monitor and restrict access to this content, and enables inheritance of sensitivity labels to output artifacts in Copilot. #copilotcontrolsystem</p>
-<p class="meta">Status: Launched | GA Date: September CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Copilot (Microsoft 365), Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Microsoft Purview compliance portal: Data Loss Prevention - Ability to rename the policy and rule names in DLP</h2>
-<p class="description">This feature gives the ability for the DLP admin to rename the existing policy/rule without having to create the entire the rule or policy again.</p>
-<p class="meta">Status: Launched | GA Date: August CY2025
- | Preview Date: July CY2025
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Microsoft Purview</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD</p>
 <p class="tags">Platforms: Web</p>
 <p class="tags">Phase: General Availability, Preview</p>
 </section>
