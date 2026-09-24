@@ -6,7 +6,81 @@
 </head>
 <body>
 <h1>Dynamics 365 Field Service Roadmap</h1>
-<p>Total items: 6</p>
+<p>Total items: 10</p>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Optimize asset maintenance schedules using completed service</h2>
+<p class="description"><p>Business value</p>
+<p>Asset maintenance is most effective when service intervals reflect how equipment is actually used and maintained. Static schedules that continue from an assumed date or meter value can cause an organization to service an asset more often than necessary after early maintenance or wait too long after late, partial, or usage-intensive service.</p>
+<p>Feeding completed maintenance activities, actual completion dates, and meter readings back into the maintenance plan recalibrates future requirements around the asset's real operating and service history. This closed-loop approach helps organizations avoid both over-maintenance and under-maintenance, balancing asset reliability and availability with labor, parts, and service costs.</p>
+<p>Feature detail</p>
+<p>Completed maintenance is used as a planning input, not only recorded as service history. When maintenance work is completed, the system evaluates which planned maintenance activities were fulfilled and feeds the actual completion date and relevant meter readings back into the asset's maintenance plan. The plan uses those results as the new basis for calculating the next applicable maintenance requirement.</p>
+<p>For calendar-based maintenance, the next event is recalculated from the completed service and the plan's recurrence rules. For usage-based maintenance, the next threshold is calculated from the asset's meter value when the activity was completed. For criteria that combine time and usage, the plan continues to evaluate both conditions from the updated maintenance baseline. Sequential plans advance according to the activities that were actually completed.</p>
+<p>The optimized plan then supplies updated due dates and activities to maintenance coverage views, demand forecasts, and future work-order generation. As additional maintenance is completed, the feedback loop keeps the schedule aligned with the asset's evolving usage and service history.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Forecast planned maintenance demand</h2>
+<p class="description"><p>Business value</p>
+<p>Maintenance demand often becomes visible to service operations only after work orders are created, leaving limited time to prepare capacity and materials. A forward-looking maintenance forecast gives organizations earlier visibility into expected work so they can anticipate labor, skills, parts, and scheduling demand across the asset population.</p>
+<p>This supports more proactive operational planning and helps teams identify periods of concentrated demand before they result in resource conflicts, parts shortages, or delayed maintenance.</p>
+<p>Feature detail</p>
+<p>Provide a forecast of maintenance events expected within a selected future planning horizon. Bring together events calculated from calendar schedules, actual meter usage, sequential maintenance plans, and projected usage based on meter history.</p>
+<p>Allow planners to understand when maintenance is expected and which assets, plans, and activities contribute to the forecast. Expected activity duration and other planning information from the maintenance definition can be used to represent the likely operational demand.</p>
+<p>The forecast provides visibility before work orders are generated. As schedules, meter readings, and usage predictions change, the expected maintenance demand can be refreshed to reflect the latest plan.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Forecast asset usage to predict maintenance due dates</h2>
+<p class="description"><p>Business value</p>
+<p>Usage-based maintenance aligns service with the work an asset has actually performed, but a current meter reading alone does not tell the organization when the next threshold will be reached. Forecasting the asset's expected usage rate converts meter-based maintenance from a reactive trigger into a forward-looking planning signal.</p>
+<p>Maintenance and reliability teams can use the projected due date to plan labor, parts, capacity, and customer downtime before the threshold is reached. Because the estimate is derived from the individual asset's recent operating history, it reflects real utilization more closely than a generic calendar assumption while remaining explainable and reviewable by planners.</p>
+<p>Feature detail</p>
+<p>Calculate a projected usage rate for each asset from the trailing 30-day mean of its historical meter-usage logs. This rate represents the asset's recent pace of operation and drives all projected due dates for usage-based maintenance activities on that asset.</p>
+<p>For each usage-based maintenance requirement, use the calculated rate to translate the remaining usage before the next threshold into an estimated calendar due date. The configured meter threshold remains the maintenance requirement; the projected date provides the advance planning signal used by maintenance forecasts and lead-window work-order generation.</p>
+<p>Store the calculated usage rate and the date and time when it was last calculated. Exposing both values lets planners assess how fresh the estimate is and whether the available history is sufficient to rely on the projection.</p>
+<p>Apply outlier protection when calculating the trailing mean so isolated meter spikes, incorrect readings, or other anomalous input data do not disproportionately change the projected usage rate. Recalculate the rate as additional meter history becomes available so future maintenance predictions continue to reflect the asset's recent usage.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Plan asset maintenance using time, actual usage, and service sequences</h2>
+<p class="description"><p>Business value</p>
+<p>Organizations can maintain assets according to how the equipment ages, how much it is actually used, and which service activities have already been completed. A flexible maintenance schedule helps avoid servicing lightly used equipment too often while reducing the risk that heavily used equipment operates beyond its required maintenance interval.</p>
+<p>Usage-based schedules connect maintenance directly to meter readings recorded for the individual asset. This allows work to be driven by actual operating hours, mileage, cycles, production counts, or another tracked measure rather than by an estimated calendar interval alone. Combining scheduling methods in one plan supports more consistent execution of manufacturer guidance, internal reliability standards, and contractual maintenance commitments.</p>
+<p>Feature detail</p>
+<p>Define maintenance activities against the actual usage of an asset by specifying recurring service intervals on its meter. For example, require an oil change after every 150 operating hours or an inspection after every configured number of miles, cycles, or units produced. As new readings are recorded, the asset's accumulated usage determines when the next maintenance interval is reached.</p>
+<p>Define other activities using calendar recurrence or combine calendar and usage criteria in one rule. For combined criteria, the plan initiates maintenance when either the elapsed-time threshold or the actual-usage threshold occurs first.</p>
+<p>Create sequential maintenance programs in which different activities become due at different points in the maintenance cycle. For example, a plan can progress through inspections, minor services, major services, and overhauls rather than repeating the same activity at every interval.</p>
+<p>The maintenance plan continuously evaluates its configured intervals against the asset's dates, recorded meter usage, and completed maintenance sequence to determine which activity is due next. When the applicable threshold is reached, the plan produces the maintenance requirement that drives downstream work-order generation. This gives planners one place to manage calendar-based, actual-usage-based, whichever-comes-first, and multi-step maintenance strategies.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Dynamics 365 Field Service: Choose how work order services flow into project financials</h2>
 <p class="description"><p>Organizations can now control how work order services contribute to project financials when using Dynamics 365 Field Service and Project Operations together. A new administrator-level setting lets organizations choose whether work order services flow as time or material transactions based on how they manage field execution and technician labor.</p></p>
