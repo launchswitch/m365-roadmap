@@ -6,7 +6,156 @@
 </head>
 <body>
 <h1>Dynamics 365 Field Service Roadmap</h1>
-<p>Total items: 10</p>
+<p>Total items: 19</p>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Process subcontractor photos, completion documents, and inspection results</h2>
+<p class="description"><p>Business value</p>
+<p>Subcontractors often document completed work through photos, service reports, inspection forms, certificates, and other files. When those documents remain only in a shared mailbox, service teams must manually download, interpret, organize, and reconnect them with the work they support. Important completion evidence and inspection findings can be difficult to find when a customer, dispatcher, auditor, or future technician needs them.</p>
+<p>Processing subcontractor completion documents as part of the closeout keeps evidence and supported findings connected to the Field Service work. This improves traceability, reduces document-handling effort, and preserves a more complete operational history.</p>
+<p>Feature detail</p>
+<p>The Subcontractor Agent processes supported attachments received with a subcontractor submission, including photos, PDFs, service reports, inspection documents, and other supported completion files. It associates those files with the relevant Field Service work so authorized users can find the evidence from the operational record rather than searching the mailbox.</p>
+<p>The agent can use supported document content when preparing the closeout proposal. For an inspection or task-completion document, this can include extracting supported inspection findings, outcomes, observations, deficiencies, or task results for the internal reviewer to validate and apply to the appropriate Field Service record.</p>
+<p>The review experience keeps the original document available alongside the proposed structured information so the dispatcher, service coordinator, or other authorized reviewer can compare the extraction with the source. Unsupported, unreadable, encrypted, oversized, or potentially unsafe files are surfaced for appropriate handling instead of being represented as successfully processed.</p>
+<p>Processing an invoice, parts list, or other financial or consumption document does not by itself create, match, approve, or post a financial transaction or product-consumption record unless that behavior is separately supported.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Web</p>
+<p class="tags">Phase: Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Close out bookings and work orders from subcontractor service reports</h2>
+<p class="description"><p>Business value</p>
+<p>Subcontractors commonly communicate completion through an emailed service report or a message describing the work performed. Dispatchers then have to find the correct assignment, interpret the report, update the booking and work order, and copy important closeout details into Field Service. This manual process delays operational visibility, creates inconsistent service history, and can leave completed bookings or work orders open.</p>
+<p>Using the subcontractor's service report to prepare the complete closeout gives service teams a faster and more consistent way to reconcile external work. Booking state, work-order status, and the details of the completed visit can be reviewed together before the internal records are updated.</p>
+<p>Feature detail</p>
+<p>The Subcontractor Agent processes a supported email and service report, identifies the applicable Field Service work order and active booking, and prepares a coordinated closeout proposal.</p>
+<p>The proposal can include supported booking and work-order status changes together with completion details extracted from the submission, such as the completion summary, work performed, notes, recommendations, requirements, requested follow-up, actual completion information, and supported labor-duration values.</p>
+<p>An internal dispatcher or service coordinator reviews the source submission and the proposed values, corrects or selects the supported changes as allowed, and deliberately applies them to Field Service. Coordinating the booking and work-order changes keeps scheduling records, operational status, and service history aligned.</p>
+<p>If the sender is not authorized, the work cannot be matched confidently, multiple bookings could apply, required information is missing, or the message contains no actionable closeout information, the submission is routed for human resolution rather than being silently applied.</p>
+<p>This feature closes out existing supported bookings and work orders. It does not create new follow-up work, process payroll or invoices, or automatically create parts and product-consumption records unless those capabilities are delivered separately.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Web</p>
+<p class="tags">Phase: Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Work with Subcontractors without additional licenses</h2>
+<p class="description"><p>Business value</p>
+<p>Organizations often depend on subcontractors and other external service providers who do not work in the organization's Dynamics 365 environment. Purchasing and administering an additional Dynamics 365 user license for every external worker adds cost and access-management overhead, particularly when a subcontractor only needs to report progress or completion for assigned work.</p>
+<p>The Dynamics 365 Field Service Subcontractor Agent lets external workers participate in supported Field Service processes through familiar email exchanges without requiring an additional Dynamics 365 user license for each subcontractor. Internal service teams retain a governed process and a consistent system of record while making it easier to work with a broad, distributed partner network.</p>
+<p>Feature detail</p>
+<p>Configure the Subcontractor Agent to process supported messages sent to a designated mailbox. A subcontractor can respond through email with information about assigned Field Service work rather than signing in to Dynamics 365.</p>
+<p>The agent uses the approved sender, message content, and available work references to associate the submission with the relevant Field Service work. It creates a proposed update or review task for an internal dispatcher or service coordinator, who remains responsible for applying changes to operational records.</p>
+<p>Field Service administrators control mailbox setup, approved subcontractor identities, bookable-resource associations, permissions, and required service configuration. The no-additional-user-license value applies to the external subcontractor's supported email participation. Internal Dynamics 365 users, agent or service identity requirements, capacity, and other product prerequisites continue to apply.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Web</p>
+<p class="tags">Phase: Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Onboard mid-lifecycle assets into maintenance plans</h2>
+<p class="description"><p>Business value</p>
+<p>Organizations often introduce maintenance management after equipment is already operating or acquire used assets with established age, usage, and service histories. Starting those assets at the beginning of a new maintenance plan produces irrelevant past activities and inaccurate future dates, while manually reconstructing every historical event requires significant effort.</p>
+<p>Mid-lifecycle onboarding allows existing assets to enter a standardized maintenance program at an appropriate point, helping organizations expand maintenance coverage without treating every asset as newly commissioned.</p>
+<p>Feature detail</p>
+<p>Apply a reusable maintenance plan template to an existing or used asset and initialize the resulting plan using the asset's current lifecycle information. Relevant inputs can include commissioning or installation date, current meter usage, known maintenance history, and the appropriate position in a sequential maintenance program.</p>
+<p>Advance through earlier template activities that no longer apply so the asset begins with the next relevant maintenance requirement. Preserve the context used during initialization so planners can understand how the starting position was determined.</p>
+<p>After initialization, the asset participates in the same scheduling, forecasting, work-order generation, completion feedback, and coverage experiences as other assets using the maintenance plan.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Review and visualize an asset's maintenance schedules</h2>
+<p class="description"><p>Business value</p>
+<p>An asset can have several lines of service, each with its own maintenance schedule, recurrence pattern, and future events. When those schedules are reviewed separately, planners have difficulty understanding the asset's complete maintenance plan and how the different service requirements will play out together.</p>
+<p>A consolidated list and visual timeline give maintenance teams one place to understand the asset's planned service, investigate individual events, and identify schedules or timing that should be adjusted. This visibility supports faster, more informed planning without requiring teams to reconstruct the plan from separate records.</p>
+<p>Feature detail</p>
+<p>From an asset's maintenance plan, view all maintenance schedules for that asset in one place. Review each line of service and the schedule that controls when its maintenance activities become due, including calendar-based, usage-based, combined time-and-usage, and sequential criteria.</p>
+<p>Visualize how those schedules are expected to play out over time. The visualization brings the projected maintenance events from the asset's schedules into a chronological view so users can see how the different service lines relate to one another and when maintenance is expected.</p>
+<p>Users can select and investigate an individual maintenance event to understand the service activity, schedule, trigger, and expected timing behind it. They can then return to the relevant schedule when its criteria, recurrence, sequence, or timing needs to be changed.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Create and apply reusable maintenance plans to assets</h2>
+<p class="description"><p><strong>Business value</strong></p>
+<p>Organizations can define a consistent maintenance strategy once and use it across groups of similar assets instead of designing a separate plan for every asset. This reduces setup effort, limits configuration differences across locations and teams, and provides a repeatable way to bring growing asset populations under managed maintenance.</p>
+<p>Reusable templates also make maintenance standards easier to govern. Asset and service leaders can establish the expected maintenance program for an equipment type while allowing each asset to have the plan it needs for ongoing execution.</p>
+<p><strong>Feature detail</strong></p>
+<p>Create maintenance plan templates that describe the maintenance program for an asset model, manufacturer, product, SKU, or asset category. A template brings together the maintenance activities and scheduling rules that should apply to that type of equipment.</p>
+<p>Use a template to establish a maintenance plan for one or more eligible customer assets. The resulting asset maintenance plan provides the asset-specific context used to schedule activities, forecast maintenance, and generate future work.</p>
+<p>The template and assignment experience helps users identify the appropriate standard for an asset and consistently establish maintenance coverage without rebuilding the complete maintenance definition each time.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Microsoft Copilot in Field Service Mobile app</h2>
+<p class="description"><p>Microsoft Copilot in the Dynamics 365 Field Service mobile app brings conversational AI chat capabilities directly to frontline workers. Once enabled, technicians can ask natural-language questions about Dynamics 365 Field Service data and receive contextual answers based on the app experience and their organization’s Dataverse data. With standard capabilities, Dataverse Q&amp;A supports questions such as “What is the work history of this asset?” or “Who worked on this job last?” Organizations can also extend the with custom experiences and agents available to frontline and back-office users.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS</p>
+<p class="tags">Phase: Targeted Release</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Enhanced visibility into work order financial performance</h2>
+<p class="description"><p>The new Work Order Cost Summary gives field teams a clearer view of how project-related work is performing by bringing estimated and actual costs, sales, and project task progress together in one place. Teams can quickly compare what was planned with what was actually delivered across products, services, and expenses.</p>
+<p>When the Work Order is associated with a Project Task, the summary also shows planned and completed task effort, allowing users to review financial performance and execution progress together.</p>
+<p>The summary recalculates automatically as the Work Order moves through key execution statuses, including Scheduled, In Progress, and Completed. Users can also select Refresh Totals at any time to recalculate the summary and review the latest Work Order and project values.</p>
+<p>By bringing Field Service execution data together with Project Operations financial and task information directly on the Work Order, teams can identify cost and execution variances earlier, make more informed decisions while work is in progress, and reduce the need to manually reconcile information across applications.</p>
+<p>This feature is available when the Field Service and Project Operations integration is enabled.</p></p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Support multiple warehouse assignments for field technicians</h2>
+<p class="description"><p>Field technicians often source parts from more than one warehouse. Limiting a technician to a single warehouse can make it harder to reflect how materials are actually sourced across field operations.</p>
+<p>With this capability, you can associate each field technician with multiple warehouses and define a preferred warehouse. This gives organizations a more flexible and accurate way to manage technician-to-warehouse relationships.</p></p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Dynamics 365 Field Service: Optimize asset maintenance schedules using completed service</h2>
 <p class="description"><p>Business value</p>
