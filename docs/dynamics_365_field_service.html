@@ -6,7 +6,53 @@
 </head>
 <body>
 <h1>Dynamics 365 Field Service Roadmap</h1>
-<p>Total items: 19</p>
+<p>Total items: 20</p>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Support multiple payers across Work Order lines</h2>
+<p class="description"><p>Field work does not always have a single payer. A customer may be responsible for the primary service while another party, such as a warranty provider, manufacturer, partner, or other eligible billing customer, is responsible for specific products or services performed during the same visit.</p>
+<p>This capability gives service teams more flexibility during execution by allowing the billing responsibility to be determined at the individual Work Order line level rather than just requiring every transaction on the Work Order to follow the same payer.</p></p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Expand your service offering through subcontractors without the onboarding overhead</h2>
+<p class="description"><p><strong>Business value</strong></p>
+<p>Subcontractors commonly communicate completion through an emailed service report or a message describing the work performed. Dispatchers then have to find the correct assignment, interpret the report, update the booking and work order, and copy important closeout details into Field Service. This manual process delays operational visibility, creates inconsistent service history, and can leave completed bookings or work orders open.</p>
+<p>Service teams can setup an agent to process subcontractor service reports to prepare a coordinated booking and work-order closeout. This supports faster reconciliation of external work and helps keep scheduling status, operational records, and service history consistent.</p>
+<p><strong>Feature detail</strong></p>
+<p>An agent in Dynamics 365 Field Service processes supported emails and service reports, identifies the applicable Field Service work order and active booking, and prepares a coordinated closeout proposal.</p>
+<p>The proposal can include supported booking and work-order status changes together with completion details extracted from the submission, such as the completion summary, work performed, notes, recommendations, requirements, requested follow-up, actual completion information, and supported labor-duration values.</p>
+<p>An internal dispatcher or service coordinator reviews the source submission and the proposed values, corrects or selects the supported changes as allowed, and applies them to Field Service. Coordinating the booking and work-order changes keeps scheduling records, operational status, and service history aligned.</p>
+<p>If the sender is not authorized, the work cannot be matched confidently, multiple bookings could apply, required information is missing, or the message contains no actionable closeout information, the submission is routed for human resolution rather than being silently applied.</p>
+<p>This feature closes out existing supported bookings and work orders. It does not create new follow-up work, process payroll or invoices, or automatically create parts and product-consumption records unless those capabilities are delivered separately.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Web</p>
+<p class="tags">Phase: Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Support multiple warehouse assignments for field technicians</h2>
+<p class="description"><p>Field technicians often source parts from more than one warehouse. Limiting a technician to a single warehouse can make it harder to reflect how materials are actually sourced across field operations.</p>
+<p>With this capability, administrators can assign multiple warehouses to a Bookable Resource and designate a preferred/default warehouse for the applicable legal entity. When a technician records material consumption, the warehouse can be automatically populated based on the Work Order legal entity and the technician’s configured default warehouse for that legal entity, while still allowing the technician to select another applicable warehouse when needed.</p>
+<p>This reduces manual selection for technicians, helps ensure materials are recorded against the correct warehouse and legal entity, and gives organizations more flexibility to reflect how inventory is actually managed across field operations.</p>
+<p>This capability is supported in the Integrated deployment type with Project Operations, where Field Service works with Finance and Supply Chain Management through Dual-write.</p></p>
+<p class="meta">Status: In development | GA Date: November CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Dynamics 365 Field Service: Process subcontractor photos, completion documents, and inspection results</h2>
 <p class="description"><p>Business value</p>
@@ -37,24 +83,6 @@
 <p>An internal dispatcher or service coordinator reviews the source submission and the proposed values, corrects or selects the supported changes as allowed, and deliberately applies them to Field Service. Coordinating the booking and work-order changes keeps scheduling records, operational status, and service history aligned.</p>
 <p>If the sender is not authorized, the work cannot be matched confidently, multiple bookings could apply, required information is missing, or the message contains no actionable closeout information, the submission is routed for human resolution rather than being silently applied.</p>
 <p>This feature closes out existing supported bookings and work orders. It does not create new follow-up work, process payroll or invoices, or automatically create parts and product-consumption records unless those capabilities are delivered separately.</p></p>
-<p class="meta">Status: In development | GA Date: February CY2027
- | Preview Date: October CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Dynamics 365 Field Service</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Desktop, Web</p>
-<p class="tags">Phase: Preview</p>
-</section>
-<section class="roadmap-item">
-<h2>Dynamics 365 Field Service: Work with Subcontractors without additional licenses</h2>
-<p class="description"><p>Business value</p>
-<p>Organizations often depend on subcontractors and other external service providers who do not work in the organization's Dynamics 365 environment. Purchasing and administering an additional Dynamics 365 user license for every external worker adds cost and access-management overhead, particularly when a subcontractor only needs to report progress or completion for assigned work.</p>
-<p>The Dynamics 365 Field Service Subcontractor Agent lets external workers participate in supported Field Service processes through familiar email exchanges without requiring an additional Dynamics 365 user license for each subcontractor. Internal service teams retain a governed process and a consistent system of record while making it easier to work with a broad, distributed partner network.</p>
-<p>Feature detail</p>
-<p>Configure the Subcontractor Agent to process supported messages sent to a designated mailbox. A subcontractor can respond through email with information about assigned Field Service work rather than signing in to Dynamics 365.</p>
-<p>The agent uses the approved sender, message content, and available work references to associate the submission with the relevant Field Service work. It creates a proposed update or review task for an internal dispatcher or service coordinator, who remains responsible for applying changes to operational records.</p>
-<p>Field Service administrators control mailbox setup, approved subcontractor identities, bookable-resource associations, permissions, and required service configuration. The no-additional-user-license value applies to the external subcontractor's supported email participation. Internal Dynamics 365 users, agent or service identity requirements, capacity, and other product prerequisites continue to apply.</p></p>
 <p class="meta">Status: In development | GA Date: February CY2027
  | Preview Date: October CY2026
  | Roadmap Status: Include this month
@@ -136,18 +164,6 @@
 <p>The summary recalculates automatically as the Work Order moves through key execution statuses, including Scheduled, In Progress, and Completed. Users can also select Refresh Totals at any time to recalculate the summary and review the latest Work Order and project values.</p>
 <p>By bringing Field Service execution data together with Project Operations financial and task information directly on the Work Order, teams can identify cost and execution variances earlier, make more informed decisions while work is in progress, and reduce the need to manually reconcile information across applications.</p>
 <p>This feature is available when the Field Service and Project Operations integration is enabled.</p></p>
-<p class="meta">Status: In development | GA Date: November CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Dynamics 365 Field Service</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Dynamics 365 Field Service: Support multiple warehouse assignments for field technicians</h2>
-<p class="description"><p>Field technicians often source parts from more than one warehouse. Limiting a technician to a single warehouse can make it harder to reflect how materials are actually sourced across field operations.</p>
-<p>With this capability, you can associate each field technician with multiple warehouses and define a preferred warehouse. This gives organizations a more flexible and accurate way to manage technician-to-warehouse relationships.</p></p>
 <p class="meta">Status: In development | GA Date: November CY2026
  | Roadmap Status: Include this month
 </p>
