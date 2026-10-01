@@ -6,7 +6,69 @@
 </head>
 <body>
 <h1>Dynamics 365 Field Service Roadmap</h1>
-<p>Total items: 21</p>
+<p>Total items: 23</p>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Preserve actual booking End Time when completion is recorded later</h2>
+<p class="description"><p><strong>Business value</strong></p>
+<p>Technicians do not always record booking completion at the moment work ends. They may update the booking later because of connectivity, customer-facing responsibilities, or end-of-day administration. When the later administrative action replaces the booking End Time, the recorded duration can extend beyond the work that was actually performed and affect downstream journals, time entries, labor costs, actuals, and work-order completion reporting.</p>
+<p>Field Service administrators can choose whether completion by the booked resource automatically changes the booking End Time. Organizations whose technicians complete bookings later can preserve the existing or explicitly supplied work end, helping booking duration and downstream time and cost records remain aligned with when the work occurred.</p>
+<p><strong>Feature detail</strong></p>
+<p>Use the organization-level <strong>Set End Time on booked resource completion</strong> setting in Field Service settings to control the automatic End Time update.</p>
+<ul>
+<li>With the setting set to <strong>Yes</strong>, which is the default, current behavior is preserved. When the booked resource completes a booking without supplying End Time, Field Service sets End Time to the completion time and recalculates Duration.</li>
+<li>With the setting set to <strong>No</strong>, Field Service preserves End Time and Duration when the booked resource completes the booking unless the completion request explicitly supplies a different End Time.</li>
+<li>Completion by another user or an integration continues to preserve End Time for either setting value.</li>
+</ul>
+<p>When the setting is No and the booked resource completes the booking, Field Service uses the retained or supplied End Time as the effective Completed booking timestamp. This keeps timestamp-derived booking journals and automatic time entries aligned with the recorded work end. Dataverse audit fields continue to show when the completion was submitted.</p>
+<p>The setting applies to future completion transitions and does not rewrite historical bookings. It does not change the booking-status lifecycle, invoice generation, or the existing Work Order Completed On calculation, which continues to use the latest eligible booking End Time.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Generate maintenance work orders within a configurable lead window</h2>
+<p class="description"><p><strong>Business value</strong></p>
+<p>Organizations can turn upcoming maintenance requirements into executable Field Service work without requiring planners to monitor every asset and create each work order manually. Generating work at a controlled point before it is due gives dispatchers time to secure technicians, skills, parts, and customer access while avoiding an unnecessarily large backlog of work created too far in advance.</p>
+<p>This connects long-range maintenance planning with day-to-day service execution and helps ensure that a valid maintenance requirement becomes actionable at the right time.</p>
+<p><strong>Feature detail</strong></p>
+<p>Configure a lead window that determines how far in advance an upcoming maintenance event should create a work order. When a scheduled or predicted event enters that window, generate the corresponding Field Service work order for the customer asset.</p>
+<p>Carry the relevant maintenance context into the generated work, including the maintenance activity and the information required to prepare and schedule service. Depending on the configured maintenance definition, this can include tasks, products, services, required skills, and expected duration.</p>
+<p>Work-order generation can operate from maintenance due through calendar recurrence, actual meter usage, or a projected usage date. The generated work remains connected to the originating maintenance event so planners can understand why it was created and prevent duplicate demand.</p></p>
+<p class="meta">Status: In development | GA Date: February CY2027
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Desktop, Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Field Service: Streamline mobile work with an optimized Subgrid control</h2>
+<p class="description"><p><strong>Business Value</strong></p>
+<p>With a Subgrid optimized for mobile, frontline workers will experience click reduction and faster field workflows. Enhancements to the Subgrid control include top‑level Add New and Use/Complete all action buttons, bulk‑add functionality, barcode scanning, and inline editing to speed record management on the go.</p>
+<p><strong>Feature Details</strong></p>
+<p>Field Service Mobile is improving the existing Service Task View, Service View, and Product View Subgrid controls to provide a faster, touch-first way for technicians to work with common Field Service scenarios such as Work Order Products, Services, and Service Tasks.</p>
+<ul>
+<li>Users can add multiple records in fewer steps using bulk add mutli-select functionality.</li>
+<li>Users can mark all records as complete/used in one go, saving repetitive, individual clicks per record.</li>
+<li>Frequently used fields for Subgrid records can be edited inline, reducing the need to open the full record form for common updates.</li>
+<li>Barcode scanning helps users quickly find and select products instead of scrolling through a long list.</li>
+</ul>
+<p>This experience keeps frontline workers in context by returning them directly to the grid after save, reducing navigation, scrolling, and form transitions — allowing them stay focused on their customer work.</p></p>
+<p class="meta">Status: Rolling out | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Field Service</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Dynamics 365 Field Service: Track costs for non-billable field work</h2>
 <p class="description"><p>Organizations often use the same field teams for both customer work and internal operational work, such as maintenance, inspections, or asset-related activities that are not billed to an external customer. These scenarios still require scheduling, technician execution, and accurate tracking of the labor, materials, and other costs associated with the work.</p>
@@ -319,27 +381,6 @@
 <p class="tags">Products: Dynamics 365 Field Service</p>
 <p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
 <p class="tags">Platforms: Web</p>
-<p class="tags">Phase: General Availability</p>
-</section>
-<section class="roadmap-item">
-<h2>Dynamics 365 Field Service: Streamline mobile work with an optimized Subgrid control</h2>
-<p class="description"><p><strong>Business Value</strong></p>
-<p>With a Subgrid optimized for mobile, frontline workers will experience click reduction and faster field workflows. Enhancements to the Subgrid control include top‑level Add New and Use/Complete all action buttons, bulk‑add functionality, barcode scanning, and inline editing to speed record management on the go.</p>
-<p><strong>Feature Details</strong></p>
-<p>Field Service Mobile is improving the existing Service Task View, Service View, and Product View Subgrid controls to provide a faster, touch-first way for technicians to work with common Field Service scenarios such as Work Order Products, Services, and Service Tasks.</p>
-<ul>
-<li>Users can add multiple records in fewer steps using bulk add mutli-select functionality.</li>
-<li>Users can mark all records as complete/used in one go, saving repetitive, individual clicks per record.</li>
-<li>Frequently used fields for Subgrid records can be edited inline, reducing the need to open the full record form for common updates.</li>
-<li>Barcode scanning helps users quickly find and select products instead of scrolling through a long list.</li>
-</ul>
-<p>This experience keeps frontline workers in context by returning them directly to the grid after save, reducing navigation, scrolling, and form transitions — allowing them stay focused on their customer work.</p></p>
-<p class="meta">Status: In development | GA Date: October CY2026
- | Roadmap Status: Include this month
-</p>
-<p class="tags">Products: Dynamics 365 Field Service</p>
-<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
-<p class="tags">Platforms: Android, Desktop, iOS, Web</p>
 <p class="tags">Phase: General Availability</p>
 </section>
 </body>

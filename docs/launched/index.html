@@ -6,8 +6,138 @@
 </head>
 <body>
 <h1>Microsoft Copilot Roadmap - Launched</h1>
-<p>All Microsoft Copilot-related roadmap items with status 'Launched' across all M365 products. 321 items.</p>
-<p>Total items: 321</p>
+<p>All Microsoft Copilot-related roadmap items with status 'Launched' across all M365 products. 330 items.</p>
+<p>Total items: 330</p>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Improve purchase order matching in Payables Agent</h2>
+<p class="description"><p>This feature improves PO matching quality in Payables Agent and aligns draft finalization behavior with existing posting controls.</p>
+<p>The agent uses an enriched <strong>PO Lines</strong> list page during matching that includes these fields:</p>
+<ul>
+<li>Line Amount — enables matching on value, not just description and quantity. This field is especially valuable for service lines where quantity (often just 1) isn't a meaningful discriminator.</li>
+<li>Expected Receipt Date — helps the agent factor in timing when multiple PO lines could match.</li>
+</ul>
+<p>By using these fields, the agent can more reliably distinguish between similar-looking PO lines, which improves accuracy in first-pass matches.</p>
+<p>The agent now respects the app's <em>Never block draft finalization</em> setting in the <strong>Receipt on Invoice</strong> field on purchase orders. This change means the agent doesn't block draft finalization because a matched PO line isn't yet marked as received. Whether goods are received is a posting time control, not a draft time control. The "Receipt on Invoice" setting on the order governs this behavior at posting.</p>
+<p>The "Receipt on Invoice" field is already available on purchase orders. With this release, we're expanding this setting to more entities:</p>
+<ul>
+<li>A new vendor-level "Receipt on Invoice" setting is introduced and automatically applied to new purchase orders created for a vendor.</li>
+<li>A new PO-line-level "Receipt on Invoice" setting allows per-line override. The inheritance chain for the setting is vendor, then purchase order, and then purchase order line, but each level can override the parent.</li>
+</ul>
+<p>We've also improved draft warnings. When the agent creates a purchase invoice draft matched to a PO, the draft surfaces warnings based not just on quantity, but also on amount. The draft warnings are for information only and don't block finalization. For example, they warn about the discrepancies in the draft and you can decide how to proceed.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Sales: Sales tools, skills and plugin are now available in Copilot Cowork</h2>
+<p class="description"><p>The updated Sales plugin brings expanded Dynamics 365 Sales context, actions, and guided workflows to Copilot Cowork, building on the native Sales skills already available in Cowork. Sellers can work with sales data and take supported actions directly in the flow of work, reducing the need to switch to Dynamics 365 Sales.</p>
+<p>The native Sales skills invoke tools published through the Dynamics 365 MCP server to retrieve sales context and perform supported actions in Dynamics 365 Sales. These native Sales skills are included in the Sales plugin, which will be delivered through the updated MOS package for the Sales app, providing administrators with a governed way to deploy and manage the capabilities.</p></p>
+<p class="meta">Status: Launched | GA Date: September CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Sales</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Updates to Agent UI experience</h2>
+<p class="description"><p>Manage agents more easily by grouping avatars and using a dedicated action to start new tasks.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Manage agent permissions easier</h2>
+<p class="description"><p>Assign additional permissions to agents when they request them.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Review content generated by agents directly on pages</h2>
+<p class="description"><p>This improvement introduces the ability for Business Central users to review and approve content generated by agents directly on the pages where they work. You no longer need to navigate to separate task pane to understand that a given document was created by an agent. Instead, agent‑generated suggestions—such as descriptions, text proposals, or field‑specific updates—appear inline where they can be evaluated and modified before being applied.</p>
+<p>By keeping the review process within the page context, users maintain flow, reduce clicks, and ensure content quality with minimal disruption. The feature builds on existing Business Central autofill user interface patterns ensuring admins and users can adopt it as part of existing agent‑powered daily workflows.</p>
+<p>Business Value:<br>
+The ability to review agent‑generated content directly on pages helps organizations streamline their daily work while maintaining accuracy and control. You can evaluate suggestions in the context of the task you are performing, reducing interruptions and improving the quality of the final output.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Show avatars for record creators and modifiers in list</h2>
+<p class="description"><p>This feature introduces visual avatars in Business Central list pages to indicate which user or agent created or last modified a record. The capability enhances traceability and supports collaborative work by making identity information immediately visible without opening the record.</p>
+<p>The avatars reflect either a named Business Central user, a system user or an AI agent, following the existing identity model. Users can hover over the avatar to see a tooltip with the full display name and record update timestamp (if available).</p>
+<p>This improvement benefits roles that frequently work with shared data—including accountants, order processors, warehouse staff, service teams, and administrators—by reducing time spent verifying ownership or responsibility for items, documents, or configuration entries. It also helps organizations adopting AI‑generated records understand when an automated agent has contributed.</p>
+<p>The feature surfaces existing <strong>Created By</strong> and <strong>Modified By</strong> fields more intuitively while respecting Business Central’s data privacy and permissions model.</p>
+<p>Business Value:<br>
+Supporting avatars for the users or agents who created and last modified entries makes record ownership clearer and easier to understand across Business Central. By surfacing identity information directly in list pages, you can quickly determine responsibility, follow up with the right person, and work with shared data more confidently.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Manage tasks from all agents in dedicated task pane</h2>
+<p class="description"><p>This feature introduces a dedicated task pane in Business Central that displays all tasks generated by the agents.</p>
+<p>The task pane appears as an additional panel in the user interface and can be opened from anywhere in Business Central. Tasks include suggestions, validations, follow‑ups access to draft documents, and other agent‑initiated actions. Users can review task details, navigate directly to the affected record, complete tasks, or dismiss them.</p>
+<p>This improvement primarily benefits roles that rely heavily on AI‑driven workflows—such as accountants, sales people, and managers—who often engage with multiple agents throughout the day. The task pane reduces friction by collecting all insights in a single location, minimizing missed tasks and improving throughput.</p>
+<p>Business Value:<br>
+The Show all agent tasks on a separate task pane feature help organizations get more value from Microsoft Copilot in Business Central by giving users a single, structured place to review and act on AI‑generated tasks. Instead of relying on notifications scattered across different pages, users gain a clear, consolidated overview of all tasks created by agents working in finance, purchasing, sales, and operations.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Enable Microsoft Copilot chat experience</h2>
+<p class="description"><p>The updated Microsoft Copilot chat experience introduces a modern, consistent, and intuitive interface that aligns Business Central with the broader Microsoft Copilot ecosystem. The enhancement modernizes the chat panel, streamlines navigation, and improves user workflows by adopting familiar interaction patterns from Microsoft Copilot.</p>
+<p>This update benefits users who regularly interact with Copilot to accelerate daily tasks - especially operations managers, accountants, sales representatives, and administrators who rely on conversational assistance to navigate and analyse data. It also provides a more predictable experience across Microsoft 365 applications, reducing onboarding time and helping organizations adopt AI capabilities more systematically.</p>
+<p>Business Value:<br>
+The updated Copilot chat experience provides a familiar and consistent AI experience across Business Central and Microsoft applications. You get started faster, switch more easily between applications, and interact with AI more confidently, helping improve productivity and accelerate adoption.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+<p class="link"><a href="https://learn.microsoft.com//dynamics365/business-central/chat-with-copilot">More info</a></p>
+</section>
+<section class="roadmap-item">
+<h2>Dynamics 365 Business Central: Copilot and agents - Run data queries with MCP Server</h2>
+<p class="description"><p>Use new MCP tools to define, validate, and run custom data queries. Your MCP application can then query data for which no existing APIs exist.</p></p>
+<p class="meta">Status: Launched | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Business Central</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Teams: Use Copilot Chat after a call in Queues app</h2>
 <p class="description"><p>After a recorded call is completed, use Copilot in the Queues app to quickly catch up on key details, uncover insights, and resolve customer issues faster without having to manually search through a transcript or listen back to a recording. Navigate to the unified call history in the Queues app, select the recorded call record, and launch the Copilot Chat sidecar from within the Recap tab. You can then ask Copilot to generate a summary or answer questions about specific details related to the call.</p></p>
