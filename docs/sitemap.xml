@@ -8,6 +8,7 @@
   <url><loc>https://launchswitch.github.io/m365-roadmap/products/</loc><priority>0.5</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/access.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_business_central.html</loc><priority>0.3</priority></url>
+  <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_commerce.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_contact_center.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_customer_service.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_field_service.html</loc><priority>0.3</priority></url>
@@ -15,6 +16,7 @@
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_finance_and_operations_cross-app.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_project_operations.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_sales.html</loc><priority>0.3</priority></url>
+  <url><loc>https://launchswitch.github.io/m365-roadmap/dynamics_365_supply_chain_management.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/excel.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/exchange.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/forms.html</loc><priority>0.3</priority></url>
@@ -26,6 +28,7 @@
   <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_clipchamp.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_copilot_(microsoft_365).html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_copilot_studio.html</loc><priority>0.3</priority></url>
+  <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_dataverse.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_defender.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_defender_for_office_365.html</loc><priority>0.3</priority></url>
   <url><loc>https://launchswitch.github.io/m365-roadmap/microsoft_edge.html</loc><priority>0.3</priority></url>

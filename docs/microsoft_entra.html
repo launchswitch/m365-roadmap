@@ -6,7 +6,17 @@
 </head>
 <body>
 <h1>Microsoft Entra Roadmap</h1>
-<p>Total items: 14</p>
+<p>Total items: 15</p>
+<section class="roadmap-item">
+<h2>Microsoft Entra ID: Passkey support for B2B users</h2>
+<p class="description"><p>B2B users, including internal guest users and external users, will be able to register and sign in with passkeys issued by a resource tenant to meet that tenant's multifactor authentication (MFA) requirements. Today, passkeys are supported for member users in their home tenant. With this update, B2B users can register a resource tenant passkey from the resource tenant's My Security Info page, or in-line during a proof-up prompt or passkey registration campaign, and then use it to satisfy the resource tenant's MFA requirements. This change is on by default. B2B users already in scope for passkeys in your Authentication methods policy will be enabled automatically. No action is required to turn it on. If you want to review or adjust who's affected, update your Authentication methods policy, passkey registration campaign, Conditional Access policies, and user scoping before rollout.</p></p>
+<p class="meta">Status: In development | GA Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Microsoft Entra</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant), GCC</p>
+<p class="tags">Phase: General Availability</p>
+</section>
 <section class="roadmap-item">
 <h2>Microsoft Entra: Enhanced Security Accounts Manager (sAM) Account Name support for Microsoft Entra Domain Services</h2>
 <p class="description">Enhanced support for synchronizing the Security Accounts Manager account name (sAMAccountName) with Microsoft Entra Domain Services is now in Public Preview. This feature allows sAMAccountName to be populated from the onPremisesSamAccountName attribute in Microsoft Entra ID. Existing managed domains can enable the new synchronization behavior, while it is enabled by default for new managed domains. When enabled, existing hybrid users are updated during synchronization; cloud-only users without an onPremisesSamAccountName value continue to use mailNickname-based generation. The feature is available for Enterprise and Premium SKUs.</p>
