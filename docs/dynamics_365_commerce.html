@@ -6,7 +6,63 @@
 </head>
 <body>
 <h1>Dynamics 365 Commerce Roadmap</h1>
-<p>Total items: 1</p>
+<p>Total items: 2</p>
+<section class="roadmap-item">
+<h2>Dynamics 365 Commerce: Add items to a transaction from the numpad</h2>
+<p class="description"><h2>How it works</h2>
+<p>​<br>
+Quick add reuses the existing numpad on the transaction screen, so there is no new input control to learn and no additional space consumed in the transaction grid.<br>
+​</p>
+<ol>
+<li>The associate enters a full or partial item number on the numpad.</li>
+<li>On an exact match, the item is added directly to the transaction.</li>
+<li>On a partial match, instead of navigating to the search results page, an inline dialog opens on the transaction screen listing the matching products.</li>
+<li>The associate adds an item directly from that inline list using Add to sale.<br>
+​<br>
+If a selected product requires variant selection such as size or color, the variant selection dialog is invoked inline before the item is added. Quick add is optimized for fast, SKU-based matching and is intentionally distinct from global search, which remains the tool for exploration and rich product discovery.<br>
+​</li>
+</ol>
+<h2>Inline result experience</h2>
+<p>​</p>
+<ul>
+<li>Partial matches are shown as a list on the transaction screen, each row offering an Add to sale action.</li>
+<li>Results do not navigate to the product page by default, keeping the associate in context.</li>
+</ul>
+<p>​</p>
+<h2>Platform behavior</h2>
+<p>​</p>
+<ul>
+<li>Desktop and mobile behave consistently: exact matches add directly, partial matches show inline results.</li>
+<li>On mobile, the full-screen numpad follows the same logic.<br>
+​</li>
+</ul>
+<h2>Entry point</h2>
+<p>​<br>
+Quick add is triggered from the existing numpad on the transaction screen. There is no separate text input field, avoiding redundancy with global search and preserving screen space.<br>
+​</p>
+<h2>Enabling the feature</h2>
+<p>​</p>
+<ul>
+<li>Application: Store Commerce (Point of Sale).</li>
+<li>Quick add builds on the numpad entry experience already present on the transaction screen.<br>
+​</li>
+</ul>
+<h2>Dependencies</h2>
+<p>​</p>
+<ul>
+<li>Reuses the inline variant selector common control, shared with the Bulk add experience.</li>
+<li>Quick add and Bulk add are companion features; Bulk add covers pasting a full list of items, while Quick add covers fast single-item entry from the numpad.<br>
+​</li>
+</ul></p>
+<p class="meta">Status: In development | GA Date: December CY2026
+ | Preview Date: October CY2026
+ | Roadmap Status: Include this month
+</p>
+<p class="tags">Products: Dynamics 365 Commerce</p>
+<p class="tags">Cloud: Worldwide (Standard Multi-Tenant)</p>
+<p class="tags">Platforms: Web</p>
+<p class="tags">Phase: General Availability, Preview</p>
+</section>
 <section class="roadmap-item">
 <h2>Dynamics 365 Finance and Operations cross-app: Migrate finance and operations environments from Lifecycle Services to Power Platform admin center</h2>
 <p class="description"><p>The self-service environment migration feature moves management of an existing finance and operations apps environment from Microsoft Dynamics Lifecycle Services to the Microsoft Power Platform admin center.</p></p>
